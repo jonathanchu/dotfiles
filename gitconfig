@@ -1,0 +1,58 @@
+[user]
+    name = Jonathan Chu
+    email = jonathan.chu@me.com
+
+[color]
+    ui = auto
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+
+[color "branch"]
+    current = cyan
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+
+[alias]
+    co = checkout
+    oneline = log --pretty=oneline
+    la = log --pretty=\"format:%ad %h (%an): %s\" --date=short
+    list = config --list
+    nf = merge --no-ff
+    ci = commit -a
+    st = status
+    ss = status -s
+    br = branch
+    fix = reset --hard
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    lga = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --branches
+    lp = log -p
+    lg = log --oneline --decorate --graph
+    lss = log --stat --summary
+    tree = log --graph --pretty=oneline --decorate
+    last = log -1 HEAD
+
+[core]
+    excludesfile = /Users/jonathan/.gitignore_global
+
+[difftool "sourcetree"]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path =
+[mergetool "sourcetree"]
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
+[heroku]
+    account = jonathanchu
