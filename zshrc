@@ -21,7 +21,7 @@ export DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git svn mercurial autojump python pip github vagrant brew virtualenvwrapper)
+plugins=(git svn mercurial autojump python pip github vagrant brew)
 
 source $ZSH/oh-my-zsh.sh
 
