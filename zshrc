@@ -30,9 +30,6 @@ source $ZSH/oh-my-zsh.sh
 # rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-NODE_PATH="/usr/local/lib/node_modules"
-export NODE_PATH
-
 PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/X11/bin:/usr/local/share/python:/Applications/Postgres.app/Contents/MacOS/bin:/Users/jonathan/.rvm/bin:/Users/jonathan/.rvm/gems/ruby-2.0.0-p247/bin:$HOME/bin:$HOME/projects/git-toolbelt:/usr/local/share/npm/bin"
 export PATH
 
