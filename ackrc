@@ -15,3 +15,4 @@
 # ignore directories
 --ignore-dir=.tox
 --ignore-dir=CACHE
+--ignore-dir=.direnv
