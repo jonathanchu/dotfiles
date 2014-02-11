@@ -30,7 +30,7 @@ source $ZSH/oh-my-zsh.sh
 # rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/X11/bin:/usr/local/share/python:/Applications/Postgres.app/Contents/MacOS/bin:/Users/jonathan/.rvm/bin:/Users/jonathan/.rvm/gems/ruby-2.0.0-p247/bin:$HOME/bin:$HOME/projects/git-toolbelt:/usr/local/share/npm/bin"
+PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/X11/bin:/usr/local/share/python:/Applications/Postgres.app/Contents/MacOS/bin:/Users/jonathan/.rvm/bin:/Users/jonathan/.rvm/gems/ruby-2.0.0-p247/bin:$HOME/bin:$HOME/projects/git-toolbelt:/usr/local/share/npm/bin:$HOME/projects/dotfiles/bin"
 export PATH
 
 BAT_CHARGE=batcharge.py
