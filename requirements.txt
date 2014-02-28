@@ -1,5 +1,6 @@
-virtualenv
-virtualenvwrapper
+flake8
 ipython
 lice
 pip-tools
+virtualenv
+virtualenvwrapper
