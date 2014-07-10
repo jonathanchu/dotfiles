@@ -16,3 +16,4 @@
 --ignore-dir=.tox
 --ignore-dir=CACHE
 --ignore-dir=.direnv
+--ignore-dir=logs
