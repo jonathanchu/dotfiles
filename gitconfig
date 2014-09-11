@@ -47,6 +47,7 @@
     lss = log --stat --summary
     tree = log --graph --pretty=oneline --decorate
     last = log -1 HEAD
+    pr = "!f() { git fetch origin pull/$1/head:pr-$1 && git checkout pr-$1; }; f"
 
 [core]
     excludesfile = /Users/jonathan/.gitignore_global
