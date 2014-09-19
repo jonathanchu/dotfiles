@@ -1,8 +1,13 @@
+enum34
 flake8
+ipaddress
 ipython
 lice
 mercurial
+natsort
 pep8
+pies
+pies2overrides
 pip-tools
 pyflakes
 pymacs
