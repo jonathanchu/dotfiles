@@ -4,5 +4,6 @@ lice
 mercurial
 pep8
 pip-tools
+pyflakes
 virtualenv
 virtualenvwrapper
