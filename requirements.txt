@@ -5,5 +5,8 @@ mercurial
 pep8
 pip-tools
 pyflakes
+rope
+ropemacs
+ropemode
 virtualenv
 virtualenvwrapper
