@@ -17,3 +17,4 @@
 --ignore-dir=CACHE
 --ignore-dir=.direnv
 --ignore-dir=logs
+--ignore-dir=.iron-tmp
