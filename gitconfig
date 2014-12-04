@@ -58,8 +58,6 @@
 [mergetool "sourcetree"]
     cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
     trustExitCode = true
-[heroku]
-    account = jonathanchu
 [filter "media"]
     clean = git-media-clean %f
     smudge = git-media-smudge %f
