@@ -10,7 +10,7 @@ pies
 pies2overrides
 pip-tools
 pyflakes
-pymacs
+# pymacs
 rope
 ropemacs
 ropemode
