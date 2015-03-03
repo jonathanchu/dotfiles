@@ -27,6 +27,7 @@ alias ccat 'pygmentize -g'
 alias pm 'python manage.py'
 alias pms 'python manage.py shell_plus'
 alias pmr 'python manage.py runserver'
+alias ipn 'ipython notebook'
 
 alias git hub
 alias top 'glances'
