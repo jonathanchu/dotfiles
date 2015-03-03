@@ -1,0 +1,6 @@
+.DS_Store
+/config/fish/fish_history
+/config/fish/fishd.*
+/config/git
+/config/hub
+/config/direnv
