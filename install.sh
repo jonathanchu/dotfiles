@@ -19,8 +19,3 @@ for name in *; do
     echo "Linked $PWD/$name to $target."
   fi
 done
-
-# Boostrap the environment
-
-echo "####### installing python packages"
-pip install -r requirements.txt
