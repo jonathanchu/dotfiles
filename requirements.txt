@@ -1,12 +1,9 @@
 enum34
-flake8
 ipaddress
 ipython
 mercurial
 natsort
-pep8
 pip-tools
-pyflakes
 rope
 ropemacs
 ropemode
