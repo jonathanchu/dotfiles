@@ -1,10 +1,4 @@
-enum34
-ipaddress
-ipython
-mercurial
-natsort
 rope
 ropemacs
 ropemode
 virtualenv
-virtualenvwrapper
