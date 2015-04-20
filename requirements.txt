@@ -6,8 +6,6 @@ lice
 mercurial
 natsort
 pep8
-pies
-pies2overrides
 pip-tools
 pyflakes
 # pymacs
