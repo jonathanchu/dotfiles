@@ -8,7 +8,6 @@ natsort
 pep8
 pip-tools
 pyflakes
-# pymacs
 rope
 ropemacs
 ropemode
