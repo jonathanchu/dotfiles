@@ -2,7 +2,6 @@ enum34
 flake8
 ipaddress
 ipython
-lice
 mercurial
 natsort
 pep8
