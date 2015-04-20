@@ -3,7 +3,6 @@ ipaddress
 ipython
 mercurial
 natsort
-pip-tools
 rope
 ropemacs
 ropemode
