@@ -87,7 +87,6 @@ set -gx EDITOR emacs
 
 if status --is-login
     . ~/.config/fish/env.fish
-    # . ~/.pythonz/etc/pythonz.fish
 end
 
 if status --is-interactive
