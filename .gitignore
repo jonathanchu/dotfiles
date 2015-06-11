@@ -5,3 +5,4 @@
 /config/hub
 /config/direnv
 /config/configstore
+/lein/repl-history
