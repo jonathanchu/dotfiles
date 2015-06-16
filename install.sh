@@ -21,6 +21,10 @@ for name in *; do
 done
 
 # Bootstrap the environment
+echo "####### python"
+pip install -U pip
+pip install -r ~/.requirements.txt
+
 echo "####### installing pipsi"
 curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python2.7
 ~/.pipsi
