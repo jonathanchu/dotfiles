@@ -24,3 +24,6 @@ done
 echo "####### installing pipsi"
 curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python2.7
 ~/.pipsi
+
+echo "####### installing jshint globally via npm"
+npm install -g jshint
