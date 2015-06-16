@@ -19,3 +19,8 @@ for name in *; do
     echo "Linked $PWD/$name to $target."
   fi
 done
+
+# Bootstrap the environment
+echo "####### installing pipsi"
+curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python2.7
+~/.pipsi
