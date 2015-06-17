@@ -1,0 +1,93 @@
+#-------------------------------------------------------------------------------
+# Configuration options
+#-------------------------------------------------------------------------------
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+
+
+#-------------------------------------------------------------------------------
+# Aliases
+#-------------------------------------------------------------------------------
+# Modal key
+alias modal-key shift,cmd,space
+
+# Helper aliases
+alias sox screenOriginX
+alias soy screenOriginY
+alias ssx screenSizeX
+alias ssy screenSizeY
+
+# Positioning aliases
+# Aliases from https://github.com/mitchellh/dotfiles/blob/master/slate
+alias full move ${sox};${soy} ${ssx};${ssy}
+alias left-half move ${sox};${soy} ${ssx}/2+1;${ssy}
+alias right-half move ${sox}+${ssx}/2;${soy} ${ssx}/2;${ssy}
+alias top-half move ${sox};${soy} ${ssx};${ssy}/2
+alias bot-half move ${sox};${soy}+${ssy}/2 ${ssx};${ssy}/2
+alias top-left-corner move ${sox};${soy} ${ssx}/2;${ssy}/2
+alias top-right-corner move ${sox}+${ssx}/2;${soy} ${ssx}/2;${ssy}/2
+alias bot-left-corner move ${sox};${soy}+${ssy}/2 ${ssx}/2;${ssy}/2
+alias bot-right-corner move ${sox}+${ssx}/2;${soy}+${ssy}/2 ${ssx}/2;${ssy}/2
+
+
+#-------------------------------------------------------------------------------
+# Layouts
+#-------------------------------------------------------------------------------
+# Layout for external monitor
+layout external-monitor 'Google Chrome':REPEAT move ${sox};${soy} (${ssx}/10)*6;${ssy}
+layout external-monitor 'Emacs':REPEAT move ${sox};${soy} (${ssx}/10)*6;${ssy}
+layout external-monitor 'iTerm':REPEAT move ${ssx}-(${ssx}/10)*4;${soy} (${ssx}/10)*4;${ssy}
+layout external-monitor 'Textual':REPEAT move ${sox}+550;${soy}+175 1360;855
+layout external-monitor 'Mail':REPEAT move ${sox}+300;${soy}+150 1360;855
+layout external-monitor 'Billings':REPEAT move ${sox}+250;${soy}+100 1360;855
+layout external-monitor 'Tweetbot' move ${ssx}-540-486;${soy} 540;${ssy}
+
+# Layout for laptop display
+layout laptop 'Google Chrome':REPEAT move ${sox};${soy} (${ssx}/10)*6;${ssy}
+layout laptop 'Emacs':REPEAT move ${sox};${soy} ${ssx}/2;${ssy}
+layout laptop 'iTerm':REPEAT move ${ssx}-${ssx}/2;${soy} ${ssx}/2;${ssy}
+# layout laptop 'Textual':REPEAT move ${sox}+350;${soy}+175 1360;855
+layout laptop 'Mail':REPEAT move ${sox}+300;${soy}+150 1360;855
+# layout laptop 'Billings':REPEAT move ${sox}+250;${soy}+100 1360;855
+# layout laptop 'Tweetbot' move ${ssx}-540-486;${soy} 540;${ssy}
+
+
+#-------------------------------------------------------------------------------
+# Bindings
+#-------------------------------------------------------------------------------
+# Layout activation bindings
+bind 1:${modal-key} sequence layout external-monitor
+bind 2:${modal-key} sequence layout laptop
+
+# Resize bindings
+# bind right:alt       resize +10% +0
+# bind left:alt        resize -10% +0
+# bind up:alt          resize +0   -10%
+# bind down:alt        resize +0   +10%
+
+# Positioning bindings
+# Bindings from https://github.com/mitchellh/dotfiles/blob/master/slate
+bind f:cmd,ctrl ${full}
+bind h:cmd,ctrl ${left-half}
+bind l:cmd,ctrl ${right-half}
+bind j:cmd,ctrl ${bot-half}
+bind k:cmd,ctrl ${top-half}
+bind u:cmd,ctrl ${top-left-corner}
+bind i:cmd,ctrl ${top-right-corner}
+bind n:cmd,ctrl ${bot-left-corner}
+bind m:cmd,ctrl ${bot-right-corner}
+
+# Focus bindings
+# bind right:cmd    focus right
+# bind left:cmd     focus left
+# bind up:cmd       focus up
+# bind down:cmd     focus down
+# bind up:cmd;alt   focus behind
+# bind down:cmd;alt focus behind
+
+# Window Hints
+bind esc:cmd hint
+
+# Relaunch
+bind f12:cmd relaunch
