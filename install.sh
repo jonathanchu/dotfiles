@@ -24,6 +24,9 @@ done
 echo "####### installing homebrew"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+echo "####### installing git"
+brew install git
+
 echo "####### python"
 pip install -U pip
 pip install -r ~/.requirements.txt
