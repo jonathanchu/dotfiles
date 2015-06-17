@@ -21,6 +21,8 @@ for name in *; do
 done
 
 # Bootstrap the environment
+sudo /usr/bin/xcodebuild -license
+
 echo "####### installing homebrew"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
