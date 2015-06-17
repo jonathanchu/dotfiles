@@ -21,6 +21,9 @@ for name in *; do
 done
 
 # Bootstrap the environment
+echo "####### installing homebrew"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 echo "####### python"
 pip install -U pip
 pip install -r ~/.requirements.txt
