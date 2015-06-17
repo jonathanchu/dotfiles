@@ -1,0 +1,144 @@
+#!/bin/bash
+
+# Taken from https://github.com/mathiasbynens/dotfiles/blob/master/.brew
+# By way of proxy through https://github.com/jacobian/dotfiles/blob/master/.brew
+
+# Tap some kegs
+brew tap homebrew/versions
+brew tap homebrew/science
+brew tap caskroom/fonts
+
+# Make sure we're up-to-date
+brew update
+
+# Now all the awesome stuff. Unfortunately the order here kinda matters
+# because of how things build. Ick. So, prereqs:
+brew install coreutils
+brew install sqlite
+brew install readline
+brew install caskroom/cask/brew-cask
+
+# Other stuff:
+brew install ack
+brew install ag
+brew install ascii
+brew install autoconf
+brew install automake
+brew install cmake
+brew install cowsay
+brew install direnv
+brew install emacs --with-cocoa
+brew install ffmpeg
+brew install fish
+brew install freetype
+brew install gdbm
+brew install gettext
+brew install gist
+brew install gnu-time
+brew install gpg
+brew install heroku-toolbelt
+brew install hub
+brew install jpeg
+brew install jq
+brew install keybase
+brew install leiningen
+brew install lftp
+brew install libevent
+brew install libgpg-error
+brew install libffi
+brew install libksba
+brew install libmemcached
+brew install libpng
+brew install libsvg
+brew install libtool
+brew install libyaml
+brew install markdown
+brew install mcrypt
+brew install memcached
+brew install mercurial
+brew install moreutils
+brew install mtr
+brew install mysql
+brew install nmap
+brew install node
+brew install openssl
+brew install ossp-uuid
+brew install pidof
+brew install pkg-config
+brew install png2ico
+brew install pngquant
+brew install pwgen
+brew install pypy
+brew install python
+brew install python3
+brew install python32
+brew install rabbitmq
+brew install redis
+brew install ruby
+brew install sbcl
+brew install selecta
+brew install ssh-copy-id
+brew install tig
+brew install tmux
+brew install tree
+brew install watch
+brew install webkit2png
+brew install wget
+brew install youtube-dl
+brew install zmq
+
+# Fonts
+brew cask install font-inconsolata
+brew cask install font-anonymous-pro
+
+# Native apps
+brew install brew-cask
+function installcask() {
+    if brew cask info "${@}" | grep "Not installed" > /dev/null; then
+        brew cask install "${@}"
+    else
+        echo "${@} is already installed."
+    fi
+}
+
+installcask alfred
+installcask all2mp3
+installcask arq
+installcask atom
+installcask bartender
+installcask charles
+installcask coconutbattery
+installcask dropbox
+installcask firefox
+installcask fluid
+installcask flux
+installcask github
+installcask laullon-gitx
+installcask google-drive
+installcask handbrake
+installcask heroku-toolbelt
+installcask imageoptim
+installcask iterm2
+installcask java
+installcask kaleidoscope
+installcask licecap
+installcask mailplane
+installcask mactex
+installcask menumeters
+installcask mou
+installcask nvalt
+installcask peepopen
+installcask pgadmin3
+installcask postgres
+installcask postico
+installcask rdio
+installcask screenhero
+installcask screenstagram
+installcask sequel-pro
+installcask slate
+installcask smcfancontrol
+installcask sourcetree
+installcask versions
+installcask vlc
+installcask xquartz
+installcask zooom
