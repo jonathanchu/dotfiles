@@ -27,6 +27,9 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 echo "####### installing git"
 brew install git
 
+echo "####### homebrewing the world"
+bash ~/.brew
+
 echo "####### python"
 pip install -U pip
 pip install -r ~/.requirements.txt
