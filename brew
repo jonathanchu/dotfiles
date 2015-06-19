@@ -67,6 +67,7 @@ brew install pidof
 brew install pkg-config
 brew install png2ico
 brew install pngquant
+brew install pv
 brew install pwgen
 brew install pypy
 brew install python
