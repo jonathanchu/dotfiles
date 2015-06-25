@@ -9,6 +9,10 @@ for name in *; do
   if [ ! $name == "README.md" -a ! $name == "install.sh" ! $name == 'LICENSE']; then
     target="$HOME/.$name"
 
+    if [ $name == "bin" ]; then
+      target="$HOME/$name"
+    if
+
     if [ -h $target ]; then
       rm $target
     elif [ -d $target ]; then
