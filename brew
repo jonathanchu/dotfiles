@@ -133,6 +133,7 @@ installcask peepopen
 installcask pgadmin3
 installcask postgres
 installcask postico
+installcask rescuetime
 installcask rdio
 installcask screenhero
 installcask screenstagram
