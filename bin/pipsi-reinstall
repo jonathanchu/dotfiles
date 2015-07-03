@@ -16,4 +16,4 @@ curl https://raw.githubusercontent.com/nvie/pipsi/master/get-pipsi.py | python2.
     )
 )
 
-~/.pipsi
+sh ~/.pipsi
