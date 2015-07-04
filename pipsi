@@ -19,4 +19,3 @@ pipsi install twine
 pipsi install unp
 
 pipsi install 'git+git://github.com/pre-commit/pre-commit-hooks.git#egg=pre-commit-hooks'
-pipsi install 'https://pypi.python.org/packages/source/s/s3cmd/s3cmd-1.5.0-alpha3.tar.gz#egg=s3cmd'
