@@ -15,7 +15,6 @@ pipsi install lice
 pipsi install pygments
 pipsi install python-fu
 pipsi install sr
-pipsi install supervisor
 pipsi install tox
 pipsi install twine
 pipsi install unp
