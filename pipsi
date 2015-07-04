@@ -9,7 +9,6 @@ pipsi install fabric
 pipsi install flake8
 pipsi install glances
 pipsi install httpie
-pipsi install --python python3 invoke
 pipsi install ipython
 pipsi install lice
 pipsi install pygments
