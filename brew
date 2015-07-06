@@ -64,6 +64,7 @@ brew install nmap
 brew install node
 brew install openssl
 brew install ossp-uuid
+brew install pandoc
 brew install pidof
 brew install pkg-config
 brew install png2ico
