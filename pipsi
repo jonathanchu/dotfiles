@@ -17,5 +17,3 @@ pipsi install sr
 pipsi install tox
 pipsi install twine
 pipsi install unp
-
-pipsi install 'git+git://github.com/pre-commit/pre-commit-hooks.git#egg=pre-commit-hooks'
