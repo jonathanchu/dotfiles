@@ -1,3 +1,4 @@
 jedi
 service-factory
+six
 virtualenv
