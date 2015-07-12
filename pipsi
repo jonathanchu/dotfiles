@@ -12,6 +12,7 @@ pipsi install httpie
 pipsi install ipython
 pipsi install lice
 pipsi install pygments
+pipsi install pylint
 pipsi install python-fu
 pipsi install sr
 pipsi install tox
