@@ -49,3 +49,7 @@ npm install -g jshint
 
 echo "####### fixing osx"
 bash ~/.osx
+
+echo "####### installing custom osx keybindings"
+mkdir -p ~/Library/KeyBindings
+ln -s $PWD/osx_emacs_keybindings.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
