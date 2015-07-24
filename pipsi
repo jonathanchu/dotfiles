@@ -11,6 +11,7 @@ pipsi install glances
 pipsi install httpie
 pipsi install ipython
 pipsi install lice
+pipsi install pgcli
 pipsi install pygments
 pipsi install pylint
 pipsi install python-fu
