@@ -36,3 +36,5 @@ alias .. 'cd ..'
 alias ... 'cd ../..'
 alias .... 'cd ../../..'
 alias ..... 'cd ../../../..'
+
+alias psql pgcli
