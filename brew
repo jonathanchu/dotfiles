@@ -143,5 +143,6 @@ installcask smcfancontrol
 installcask sourcetree
 installcask versions
 installcask vlc
+installcask wireshark
 installcask xquartz
 installcask zooom
