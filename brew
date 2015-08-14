@@ -94,6 +94,7 @@ brew install zmq
 # Fonts
 brew cask install font-inconsolata
 brew cask install font-anonymous-pro
+brew cask install font-meslo-lg
 
 # Native apps
 brew install brew-cask
