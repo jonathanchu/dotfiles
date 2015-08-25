@@ -90,7 +90,7 @@ if status --is-login
 end
 
 if status --is-interactive
-    set CDPATH . ~/projects/yesgraph.com ~/projects
+   . ~/.config/fish/private.fish
 end
 
 set PATH /usr/local/bin $PATH
