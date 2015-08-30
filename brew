@@ -95,7 +95,6 @@ brew install zmq
 brew cask install font-inconsolata
 brew cask install font-anonymous-pro
 brew cask install font-meslo-lg
-brew cask install font-monoid
 
 # Native apps
 brew install brew-cask
