@@ -23,6 +23,7 @@ brew install ack
 brew install ag
 brew install ascii
 brew install aspell --with-lang-en
+brew install archey
 brew install autoconf
 brew install automake
 brew install cmake
