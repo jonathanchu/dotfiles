@@ -98,5 +98,3 @@ set PATH /usr/local/bin $PATH
 set -gx __fish_initialized 1
 
 eval (direnv hook fish)
-
-archey -c
