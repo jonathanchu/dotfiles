@@ -1,3 +1,4 @@
+anaconda-mode
 jedi
 service-factory
 six
