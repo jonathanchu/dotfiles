@@ -1,5 +1,6 @@
-anaconda-mode
-jedi
-service-factory
+autopep8
+flake8
+importmagic
+rope
 six
 virtualenv
