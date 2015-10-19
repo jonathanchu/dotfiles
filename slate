@@ -38,19 +38,14 @@ alias bot-right-corner move ${sox}+${ssx}/2;${soy}+${ssy}/2 ${ssx}/2;${ssy}/2
 layout external-monitor 'Google Chrome':REPEAT move ${sox};${soy} (${ssx}/10)*6;${ssy}
 layout external-monitor 'Emacs':REPEAT move ${sox};${soy} (${ssx}/10)*6;${ssy}
 layout external-monitor 'iTerm':REPEAT move ${ssx}-(${ssx}/10)*4;${soy} (${ssx}/10)*4;${ssy}
-layout external-monitor 'Textual':REPEAT move ${sox}+550;${soy}+175 1360;855
 layout external-monitor 'Mail':REPEAT move ${sox}+300;${soy}+150 1360;855
-layout external-monitor 'Billings':REPEAT move ${sox}+250;${soy}+100 1360;855
 layout external-monitor 'Tweetbot' move ${ssx}-540-486;${soy} 540;${ssy}
 
 # Layout for laptop display
 layout laptop 'Google Chrome':REPEAT move ${sox};${soy} (${ssx}/10)*6;${ssy}
 layout laptop 'Emacs':REPEAT move ${sox};${soy} ${ssx}/2;${ssy}
 layout laptop 'iTerm':REPEAT move ${ssx}-${ssx}/2;${soy} ${ssx}/2;${ssy}
-# layout laptop 'Textual':REPEAT move ${sox}+350;${soy}+175 1360;855
 layout laptop 'Mail':REPEAT move ${sox}+300;${soy}+150 1360;855
-# layout laptop 'Billings':REPEAT move ${sox}+250;${soy}+100 1360;855
-# layout laptop 'Tweetbot' move ${ssx}-540-486;${soy} 540;${ssy}
 
 
 #-------------------------------------------------------------------------------
