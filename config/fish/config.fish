@@ -95,6 +95,8 @@ end
 
 set PATH /usr/local/bin $PATH
 
+set -gx PYTHONDONTWRITEBYTECODE 1
+
 set -gx __fish_initialized 1
 
 eval (direnv hook fish)
