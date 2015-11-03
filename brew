@@ -113,7 +113,7 @@ installcask atom
 installcask bartender
 installcask charles
 installcask coconutbattery
-installcask dropbox
+# installcask dropbox
 installcask firefox
 installcask fluid
 installcask flux
