@@ -130,6 +130,7 @@ installcask licecap
 installcask mailplane
 installcask mactex
 installcask menumeters
+installcask mongohub
 installcask mou
 installcask nvalt
 installcask peepopen
