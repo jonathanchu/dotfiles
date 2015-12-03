@@ -32,6 +32,8 @@ alias ipn 'ipython notebook'
 alias git hub
 alias top 'glances'
 
+alias pkill-emacs 'pkill -SIGUSR2 Emacs'
+
 alias .. 'cd ..'
 alias ... 'cd ../..'
 alias .... 'cd ../../..'
