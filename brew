@@ -137,7 +137,6 @@ installcask peepopen
 installcask pgadmin3
 installcask postgres
 installcask postico
-installcask rdio
 installcask screenhero
 installcask screenstagram
 installcask sequel-pro
