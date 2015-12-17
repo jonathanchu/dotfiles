@@ -118,7 +118,7 @@ installcask firefox
 installcask fluid
 installcask flux
 installcask github
-installcask laullon-gitx
+installcask rowanj-gitx
 installcask google-drive
 installcask handbrake
 installcask heroku-toolbelt
