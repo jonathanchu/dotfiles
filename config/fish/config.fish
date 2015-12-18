@@ -83,7 +83,7 @@ function virtualenv_prompt
     end
 end
 
-set -gx EDITOR emacs
+set -gx EDITOR 'emacsclient -nw'
 
 if status --is-login
     . ~/.config/fish/env.fish
