@@ -93,7 +93,7 @@ if status --is-interactive
    . ~/.config/fish/private.fish
 end
 
-set PATH /usr/local/bin $PATH
+set PATH /usr/local/bin /usr/local/sbin $PATH
 
 set -gx PYTHONDONTWRITEBYTECODE 1
 
