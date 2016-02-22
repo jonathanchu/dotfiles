@@ -38,6 +38,7 @@ brew install gist
 brew install gnu-time
 brew install gpg
 brew install heroku-toolbelt
+brew install htop
 brew install hub
 brew install jpeg
 brew install jq
