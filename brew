@@ -62,7 +62,8 @@ brew install moreutils
 brew install mtr
 brew install mysql
 brew install nmap
-brew install node
+# brew install node
+brew install node5
 brew install openssl
 brew install ossp-uuid
 brew install pandoc
