@@ -122,7 +122,7 @@ installcask github
 installcask rowanj-gitx
 installcask google-drive
 installcask handbrake
-installcask heroku-toolbelt
+installcask heroku
 installcask imageoptim
 installcask iterm2
 installcask java
