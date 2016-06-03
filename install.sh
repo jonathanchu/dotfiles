@@ -6,7 +6,7 @@
 # Taken from https://github.com/mitchellh/dotfiles/blob/master/install.sh
 
 for name in *; do
-  if [ ! $name == "README.md" -a ! $name == "install.sh" ! $name == 'LICENSE']; then
+  if [ ! $name == "README.md" -a ! $name == "install.sh" ! $name == 'LICENSE' ]; then
     target="$HOME/.$name"
 
     if [ $name == "bin" ]; then
