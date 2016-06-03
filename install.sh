@@ -11,7 +11,7 @@ for name in *; do
 
     if [ $name == "bin" ]; then
       target="$HOME/$name"
-    if
+    fi
 
     if [ -h $target ]; then
       rm $target
