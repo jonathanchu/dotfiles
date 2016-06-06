@@ -4,4 +4,4 @@ set -gx WORKON_HOME ~/.virtualenvs
 set -gx PYTHONPATH ~/.local/bin
 
 append-to-path ~/.local/bin
-append-to-path /Applications/Postgres.app/Contents/Versions/9.4/bin
+append-to-path /Applications/Postgres.app/Contents/Versions/9.5/bin
