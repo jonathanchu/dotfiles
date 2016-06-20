@@ -140,6 +140,7 @@ installcask sequel-pro
 installcask slate
 installcask smcfancontrol
 installcask sourcetree
+installcask spotify
 installcask versions
 installcask vlc
 installcask wireshark
