@@ -76,7 +76,6 @@ brew install pypy
 brew install python
 brew install python3
 brew install python32
-brew install rabbitmq
 brew install redis
 brew install ruby
 brew install sbcl
