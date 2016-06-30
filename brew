@@ -129,6 +129,7 @@ installcask licecap
 installcask mailplane
 installcask mactex
 installcask mou
+installcask ngrok
 installcask nvalt
 installcask peepopen
 installcask pgadmin3
