@@ -62,7 +62,7 @@ end
 
 function parse_git_dirty
     if git rev-parse --show-toplevel >/dev/null 2>&1
-        if test (git status 2> /dev/null ^&1 | tail -n1) != "nothing to commit, working directory clean"
+        if test (git status 2> /dev/null ^&1 | tail -n1) != "nothing to commit, working tree clean"
             set_color red
             printf '(!)'
             set_color normal
