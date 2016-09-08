@@ -25,6 +25,8 @@ alias df 'df -kh'
 alias ccat 'pygmentize -g'
 
 alias pm 'python manage.py'
+alias pmm 'python manage.py migrate'
+alias pmmm 'python manage.py makemigrations'
 alias pms 'python manage.py shell'
 alias pmr 'python manage.py runserver'
 alias ipn 'ipython notebook'
