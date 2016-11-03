@@ -28,6 +28,7 @@ alias pm 'python manage.py'
 alias pmm 'python manage.py migrate'
 alias pmmm 'python manage.py makemigrations'
 alias pms 'python manage.py shell'
+alias pmsp 'python manage.py shell_plus'
 alias pmr 'python manage.py runserver'
 alias ipn 'ipython notebook'
 
