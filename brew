@@ -134,7 +134,6 @@ installcask peepopen
 installcask pgadmin3
 installcask postgres
 installcask screenhero
-installcask sequel-pro
 installcask slate
 installcask smcfancontrol
 installcask sourcetree
