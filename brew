@@ -60,7 +60,6 @@ brew install memcached
 brew install mercurial
 brew install moreutils
 brew install mtr
-brew install mysql
 brew install nmap
 brew install node5
 brew install openssl
