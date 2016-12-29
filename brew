@@ -136,7 +136,6 @@ installcask pgadmin3
 installcask postgres
 installcask screenhero
 installcask slate
-installcask smcfancontrol
 installcask sourcetree
 installcask spotify
 installcask versions
