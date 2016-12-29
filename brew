@@ -118,7 +118,6 @@ installcask fluid
 installcask flux
 installcask github
 installcask rowanj-gitx
-installcask google-drive
 installcask handbrake
 installcask heroku
 installcask imageoptim
