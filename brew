@@ -86,6 +86,7 @@ brew install vim
 brew install watch
 brew install wget
 brew install wireshark
+brew install yarn
 brew install youtube-dl
 brew install zmq
 
