@@ -135,6 +135,7 @@ installcask peepopen
 installcask pgadmin3
 installcask postgres
 installcask screenhero
+installcask sketch
 installcask slate
 installcask sourcetree
 installcask spotify
