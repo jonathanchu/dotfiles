@@ -42,7 +42,6 @@ brew install htop
 brew install hub
 brew install jpeg
 brew install jq
-brew install keybase
 brew install leiningen
 brew install lftp
 brew install libevent
