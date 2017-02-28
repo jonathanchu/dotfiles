@@ -33,6 +33,8 @@ alias pmr 'python manage.py runserver'
 alias ipn 'ipython notebook'
 alias pmsm 'python manage.py showmigrations'
 alias pmspnb 'python manage.py shell_plus --notebook'
+alias pmmmn 'python manage.py makemigrations --name'
+alias pmmmen 'python manage.py makemigrations --empty --name'
 
 alias git hub
 alias top 'glances'
