@@ -20,3 +20,4 @@ pipsi install sr
 pipsi install tox
 pipsi install twine
 pipsi install unp
+pipsi install watchdog
