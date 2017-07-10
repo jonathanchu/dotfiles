@@ -138,6 +138,7 @@ installcask sketch
 installcask sourcetree
 installcask spotify
 installcask versions
+installcask viscosity
 installcask vlc
 installcask wireshark
 installcask xquartz
