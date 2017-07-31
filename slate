@@ -34,26 +34,24 @@ alias bot-right-corner move ${sox}+${ssx}/2;${soy}+${ssy}/2 ${ssx}/2;${ssy}/2
 #-------------------------------------------------------------------------------
 # Layouts
 #-------------------------------------------------------------------------------
-# Layout for external monitor
-layout external-monitor 'Google Chrome':REPEAT move ${sox};${soy} (${ssx}/10)*6;${ssy}
-layout external-monitor 'Emacs':REPEAT move ${sox};${soy} (${ssx}/10)*6;${ssy}
-layout external-monitor 'iTerm':REPEAT move ${ssx}-(${ssx}/10)*4;${soy} (${ssx}/10)*4;${ssy}
-layout external-monitor 'Mail':REPEAT move ${sox}+300;${soy}+150 1360;855
-layout external-monitor 'Tweetbot' move ${ssx}-540-486;${soy} 540;${ssy}
+# Layout for LG UltraWide
+layout ultrawide 'Google Chrome':REPEAT move ${sox};${soy} (${ssx}/12)*4;${ssy}
+layout ultrawide 'Emacs':REPEAT move ${sox}+(${ssx}/12*4)+2;${soy} (${ssx}/12)*4;${ssy}
+layout ultrawide 'iTerm2':REPEAT move ${sox}+(${ssx}/12*8);${soy} (${ssx}/12)*4;${ssy}
 
 # Layout for laptop display
-layout laptop 'Google Chrome':REPEAT move ${sox};${soy} (${ssx}/10)*6;${ssy}
-layout laptop 'Emacs':REPEAT move ${sox};${soy} ${ssx}/2;${ssy}
-layout laptop 'iTerm':REPEAT move ${ssx}-${ssx}/2;${soy} ${ssx}/2;${ssy}
-layout laptop 'Mail':REPEAT move ${sox}+300;${soy}+150 1360;855
+layout tiger 'Google Chrome':REPEAT move ${sox};${soy} (${ssx}/10)*6;${ssy}
+layout tiger 'Emacs':REPEAT move ${sox};${soy} ${ssx}/2;${ssy}
+layout tiger 'iTerm':REPEAT move ${ssx}-${ssx}/2;${soy} ${ssx}/2;${ssy}
+layout tiger 'Mail':REPEAT move ${sox}+300;${soy}+150 1360;855
 
 
 #-------------------------------------------------------------------------------
 # Bindings
 #-------------------------------------------------------------------------------
 # Layout activation bindings
-bind 1:${modal-key} sequence layout external-monitor
-bind 2:${modal-key} sequence layout laptop
+bind 1:${modal-key} sequence layout ultrawide
+bind 2:${modal-key} sequence layout tiger
 
 # Resize bindings
 # bind right:alt       resize +10% +0
