@@ -140,6 +140,7 @@ installcask postgres
 installcask postico
 installcask screenhero
 installcask sketch
+installcask slate
 installcask sourcetree
 installcask spotify
 installcask tripmode
