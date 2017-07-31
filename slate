@@ -40,10 +40,13 @@ layout ultrawide 'Emacs':REPEAT move ${sox}+(${ssx}/12*4)+2;${soy} (${ssx}/12)*4
 layout ultrawide 'iTerm2':REPEAT move ${sox}+(${ssx}/12*8);${soy} (${ssx}/12)*4;${ssy}
 
 # Layout for laptop display
-layout tiger 'Google Chrome':REPEAT move ${sox};${soy} (${ssx}/10)*6;${ssy}
-layout tiger 'Emacs':REPEAT move ${sox};${soy} ${ssx}/2;${ssy}
-layout tiger 'iTerm':REPEAT move ${ssx}-${ssx}/2;${soy} ${ssx}/2;${ssy}
-layout tiger 'Mail':REPEAT move ${sox}+300;${soy}+150 1360;855
+layout tiger 'Google Chrome':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
+layout tiger 'Emacs':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
+layout tiger 'iTerm2':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
+layout tiger 'Slack':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
+layout tiger 'Mail':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
+layout tiger 'Mailplane':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
+layout tiger 'Spotify':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
 
 
 #-------------------------------------------------------------------------------
