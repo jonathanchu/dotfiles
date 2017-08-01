@@ -36,7 +36,7 @@ alias bot-right-corner move ${sox}+${ssx}/2;${soy}+${ssy}/2 ${ssx}/2;${ssy}/2
 #-------------------------------------------------------------------------------
 # Layout for LG UltraWide
 layout ultrawide 'Google Chrome':REPEAT move ${sox};${soy} (${ssx}/12)*4;${ssy}
-layout ultrawide 'Emacs':REPEAT move ${sox}+(${ssx}/12*4)+2;${soy} (${ssx}/12)*4;${ssy}
+layout ultrawide 'Emacs':REPEAT move ${sox}+(${ssx}/12*4)+2;${soy} (${ssx}/12)*4+2;${ssy}
 layout ultrawide 'iTerm2':REPEAT move ${sox}+(${ssx}/12*8);${soy} (${ssx}/12)*4;${ssy}
 
 # Layout for laptop display
