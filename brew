@@ -29,7 +29,7 @@ brew install automake
 brew install cmake
 brew install cowsay
 brew install direnv
-brew install emacs-plus --with-natural-title-bar
+brew install emacs-plus --with-natural-title-bar --without-imagemagick@6
 brew install ffmpeg
 brew install fish
 brew install freetype
