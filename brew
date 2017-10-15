@@ -116,6 +116,7 @@ installcask bartender
 installcask charles
 installcask coconutbattery
 installcask dash
+installcask docker
 installcask dropbox
 installcask firefox
 installcask fliqlo
