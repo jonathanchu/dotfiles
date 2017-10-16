@@ -7,5 +7,7 @@
 /config/direnv
 /config/configstore
 /config/keybase
+/config/pgcli/log
+/config/pgcli/history
 /lein/repl-history
 /lein/repl-port
