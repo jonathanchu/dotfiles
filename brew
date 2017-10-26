@@ -140,7 +140,6 @@ installcask peepopen
 installcask pgadmin3
 installcask postgres
 installcask postico
-installcask screenhero
 installcask sequel-pro
 installcask sketch
 installcask slate
