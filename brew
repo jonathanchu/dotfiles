@@ -142,6 +142,7 @@ installcask postgres
 installcask postico
 installcask sequel-pro
 installcask sketch
+installcask slack
 installcask slate
 installcask sourcetree
 installcask spotify
