@@ -149,6 +149,7 @@ installcask spotify
 installcask tripmode
 installcask versions
 installcask viscosity
+installcask visual-studio-code
 installcask vlc
 installcask wireshark
 installcask xquartz
