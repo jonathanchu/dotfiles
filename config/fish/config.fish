@@ -42,11 +42,11 @@ function fish_prompt
 end
 
 function git_current_branch -d 'Prints a human-readable representation of the current branch'
-  set -l ref (git symbolic-ref HEAD ^/dev/null; or git rev-parse --short HEAD ^/dev/null)
-  if test -n "$ref"
-    echo $ref | sed -e s,refs/heads/,,
-    return 0
-  end
+    set -l ref (git symbolic-ref HEAD ^/dev/null; or git rev-parse --short HEAD ^/dev/null)
+    if test -n "$ref"
+        echo $ref | sed -e s,refs/heads/,,
+        return 0
+    end
 end
 
 function git_prompt
@@ -90,7 +90,7 @@ if status --is-login
 end
 
 if status --is-interactive
-   . ~/.config/fish/private.fish
+    . ~/.config/fish/private.fish
 end
 
 set PATH /usr/local/bin /usr/local/sbin /usr/local/opt/python/libexec/bin $PATH
