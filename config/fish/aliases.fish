@@ -47,5 +47,3 @@ alias .... 'cd ../../..'
 alias ..... 'cd ../../../..'
 
 alias psql pgcli
-
-alias gp='cd ~/projects/gitprime.com/GitPrime'
