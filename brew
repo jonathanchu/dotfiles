@@ -136,6 +136,7 @@ installcask mailplane
 installcask mactex
 installcask mou
 installcask ngrok
+installcask notion
 installcask nvalt
 installcask peepopen
 installcask pgadmin3
