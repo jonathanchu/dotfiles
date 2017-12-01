@@ -136,6 +136,7 @@ installcask licecap
 installcask mailplane
 installcask mactex
 installcask mou
+installcask mysqlworkbench
 installcask ngrok
 installcask notion
 installcask nvalt
