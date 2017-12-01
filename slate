@@ -39,7 +39,7 @@ layout ultrawide 'Google Chrome':REPEAT move ${sox};${soy} (${ssx}/12)*4;${ssy}
 layout ultrawide 'Emacs':REPEAT move ${sox}+(${ssx}/12*4)+2;${soy} (${ssx}/12)*4+2;${ssy}
 layout ultrawide 'iTerm2':REPEAT move ${sox}+(${ssx}/12*8);${soy} (${ssx}/12)*4;${ssy}
 
-# Layout for laptop display
+# Layout for display at Tigerlabs
 layout tiger 'Google Chrome':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 layout tiger 'Emacs':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 layout tiger 'iTerm2':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
