@@ -125,6 +125,7 @@ installcask fliqlo
 installcask fluid
 installcask flux
 installcask github
+installcask google-drive-file-stream
 installcask rowanj-gitx
 installcask handbrake
 installcask heroku
