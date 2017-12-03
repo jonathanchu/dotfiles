@@ -59,6 +59,7 @@ brew install markdown
 brew install mcrypt
 brew install memcached
 brew install mercurial
+brew install mongodb
 brew install moreutils
 brew install mtr
 brew install mysql
