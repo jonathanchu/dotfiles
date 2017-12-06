@@ -69,6 +69,7 @@ brew install openssl
 brew install ossp-uuid
 brew install pandoc
 brew install pidof
+brew install pipenv
 brew install pkg-config
 brew install png2ico
 brew install pngquant
