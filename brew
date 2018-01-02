@@ -132,6 +132,7 @@ installcask rowanj-gitx
 installcask handbrake
 installcask heroku
 installcask imageoptim
+installcask insomnia
 installcask iterm2
 installcask java
 installcask kaleidoscope
