@@ -47,6 +47,17 @@ layout tiger 'Slack':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
 layout tiger 'Mail':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
 layout tiger 'Mailplane 3':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
 layout tiger 'Spotify':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
+layout tiger 'Messages':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
+
+# Layout for display at SC
+layout sc 'Google Chrome':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
+layout sc 'Emacs':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
+layout sc 'iTerm2':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
+layout sc 'Slack':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
+layout sc 'Mail':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
+layout sc 'Mailplane 3':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
+layout sc 'Spotify':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
+layout sc 'Messages':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 
 
 #-------------------------------------------------------------------------------
@@ -55,6 +66,7 @@ layout tiger 'Spotify':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
 # Layout activation bindings
 bind 1:${modal-key} sequence layout ultrawide
 bind 2:${modal-key} sequence layout tiger
+bind 3:${modal-key} sequence layout sc
 
 # Resize bindings
 # bind right:alt       resize +10% +0
