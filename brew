@@ -29,7 +29,7 @@ brew install automake
 brew install cmake
 brew install cowsay
 brew install direnv
-brew install emacs --with-cocoa --wit-imagemagick
+brew install emacs --with-cocoa --with-imagemagick@6 --with-gnutls --with-librsvg --with-mailutils --with-modules --devel
 brew install ffmpeg
 brew install fish
 brew install freetype
