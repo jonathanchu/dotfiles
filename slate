@@ -64,6 +64,19 @@ layout sc 'Spotify':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 layout sc 'Messages':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 layout sc 'FastMail':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 
+# Layout for display for laptop
+layout laptop 'Google Chrome':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
+layout laptop 'Firefox':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
+layout laptop 'Emacs':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
+layout laptop 'iTerm2':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
+layout laptop 'Slack':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
+layout laptop 'Mail':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
+layout laptop 'Mailplane 3':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
+layout laptop 'Spotify':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
+layout laptop 'Messages':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
+layout laptop 'FastMail':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
+
+
 
 #-------------------------------------------------------------------------------
 # Bindings
@@ -72,6 +85,7 @@ layout sc 'FastMail':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 bind 1:${modal-key} sequence layout ultrawide
 bind 2:${modal-key} sequence layout tiger
 bind 3:${modal-key} sequence layout sc
+bind 4:${modal-key} sequence layout laptop
 
 # Resize bindings
 # bind right:alt       resize +10% +0
