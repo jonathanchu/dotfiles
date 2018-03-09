@@ -93,7 +93,12 @@ if status --is-interactive
     . ~/.config/fish/private.fish
 end
 
-set PATH /usr/local/bin /usr/local/sbin $PATH
+set PYENV_ROOT $HOME/.pyenv
+set PATH /usr/local/bin /usr/local/sbin $HOME/.local/bin $PYENV_ROOT/shims $PATH
+
+if status --is-interactive
+    . (pyenv init - | psub)
+end
 
 set -gx PYTHONDONTWRITEBYTECODE 1
 
