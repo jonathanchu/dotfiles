@@ -66,6 +66,7 @@ brew install mtr
 brew install mysql
 brew install nmap
 brew install node
+brew install nvie/tap/git-toolbelt
 brew install openssl
 brew install ossp-uuid
 brew install pandoc
