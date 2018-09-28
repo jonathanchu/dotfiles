@@ -47,6 +47,9 @@ curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | pyt
 # echo "####### fixing osx"
 # bash ~/.osx
 
+echo "####### install npm globals"
+# bash ~/...
+
 echo "####### installing custom osx keybindings"
 mkdir -p ~/Library/KeyBindings
 ln -s $PWD/osx_emacs_keybindings.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
