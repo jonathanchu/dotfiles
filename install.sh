@@ -44,8 +44,8 @@ echo "####### installing pipsi"
 curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python2.7
 ~/.pipsi
 
-echo "####### fixing osx"
-bash ~/.osx
+# echo "####### fixing osx"
+# bash ~/.osx
 
 echo "####### installing custom osx keybindings"
 mkdir -p ~/Library/KeyBindings
