@@ -20,7 +20,8 @@ function fish_prompt
     printf ' in '
 
     set_color $fish_color_cwd
-    printf '%s' (echo $PWD | sed -e "s|^$HOME|~|" -e 's|^/private||')
+    # printf '%s' (echo $PWD | sed -e "s|^$HOME|~|" -e 's|^/private||')
+    printf '%s' (prompt_pwd | sed -e "s|^$HOME|~|")
     set_color normal
 
     git_prompt
