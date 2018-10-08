@@ -95,7 +95,7 @@ if status --is-interactive
 end
 
 set PYENV_ROOT $HOME/.pyenv
-set PATH /usr/local/bin /usr/local/sbin $HOME/.local/bin $PYENV_ROOT/shims $PATH
+set PATH /usr/local/bin /usr/local/sbin $HOME/.local/bin $PYENV_ROOT/shims $HOME/bin $PATH
 
 if status --is-interactive
     . (pyenv init - | psub)
