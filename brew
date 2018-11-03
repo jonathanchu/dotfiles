@@ -44,6 +44,7 @@ brew install gpg
 brew install heroku-toolbelt
 brew install htop
 brew install hub
+brew install hugo
 brew install jpeg
 brew install jq
 brew install leiningen
