@@ -65,6 +65,7 @@ brew install mercurial
 brew install mongodb
 brew install moreutils
 brew install mtr
+brew install mycli
 brew install mysql
 brew install nmap
 brew install node
