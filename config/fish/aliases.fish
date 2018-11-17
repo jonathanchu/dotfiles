@@ -35,5 +35,6 @@ alias .... 'cd ../../..'
 alias ..... 'cd ../../../..'
 
 alias psql pgcli
+alias mysql mycli
 
 alias cat 'bat --theme=TwoDark'
