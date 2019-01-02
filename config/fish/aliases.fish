@@ -12,7 +12,7 @@ alias df 'df -kh'
 # Colorized cat (will guess file type based on contents)
 alias ccat 'pygmentize -g'
 
-alias pm 'python manage.py'
+# alias pm 'python manage.py'
 alias pmm 'python manage.py migrate'
 alias pmmm 'python manage.py makemigrations'
 alias pms 'python manage.py shell'
