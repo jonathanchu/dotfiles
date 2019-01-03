@@ -9,5 +9,6 @@
 /config/keybase
 /config/pgcli/log
 /config/pgcli/history
+/config/yarn/global/node_modules/
 /lein/repl-history
 /lein/repl-port
