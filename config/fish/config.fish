@@ -106,3 +106,6 @@ set -gx PYTHONDONTWRITEBYTECODE 1
 set -gx __fish_initialized 1
 
 eval (direnv hook fish)
+
+test -e ~/.iterm2_shell_integration.fish
+and source ~/.iterm2_shell_integration.fish
