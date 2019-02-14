@@ -160,6 +160,7 @@ installcask sequel-pro
 installcask sketch
 installcask slack
 installcask slate
+installcask sloth
 installcask sourcetree
 installcask spotify
 installcask tripmode
