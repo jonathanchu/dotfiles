@@ -41,7 +41,7 @@ pip install -U pip
 pip install -r ~/.requirements.txt
 
 echo "####### installing pipsi"
-curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python2.7
+curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python
 ~/.pipsi
 
 # echo "####### fixing osx"
