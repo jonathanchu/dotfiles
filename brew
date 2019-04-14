@@ -7,7 +7,6 @@
 brew tap homebrew/versions
 brew tap homebrew/science
 brew tap caskroom/fonts
-brew tap d12frosted/emacs-plus
 brew tap wagoodman/dive
 
 # Make sure we're up-to-date
@@ -34,7 +33,7 @@ brew install cowsay
 brew install direnv
 brew install dive
 brew install elm
-brew install emacs --with-cocoa --with-imagemagick@6 --with-gnutls --with-librsvg --with-mailutils --with-modules --devel
+brew install emacs
 brew install ffmpeg
 brew install fish
 brew install freetype
@@ -130,6 +129,7 @@ installcask coconutbattery
 installcask dash
 installcask docker
 installcask dropbox
+installcask emacs
 installcask firefox
 installcask fliqlo
 installcask fluid
