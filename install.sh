@@ -36,9 +36,9 @@ brew install git
 echo "####### homebrewing the world"
 bash ~/.brew
 
-echo "####### python"
-pip install -U pip
-pip install -r ~/.requirements.txt
+# echo "####### python"
+# pip install -U pip
+# pip install -r ~/.requirements.txt
 
 echo "####### installing pipsi"
 curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python
