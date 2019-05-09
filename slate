@@ -50,7 +50,7 @@ layout tiger 'Mail':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
 layout tiger 'Mailplane 3':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
 layout tiger 'Spotify':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
 layout tiger 'Messages':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
-layout tiger 'FastMail':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
+layout tiger 'Spark':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
 
 # Layout for display at SC
 layout sc 'Google Chrome':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
@@ -62,7 +62,7 @@ layout sc 'Mail':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 layout sc 'Mailplane 3':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 layout sc 'Spotify':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 layout sc 'Messages':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
-layout sc 'FastMail':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
+layout sc 'Spark':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 
 # Layout for display for laptop
 layout laptop 'Google Chrome':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
@@ -74,7 +74,7 @@ layout laptop 'Mail':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 layout laptop 'Mailplane 3':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 layout laptop 'Spotify':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 layout laptop 'Messages':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
-layout laptop 'FastMail':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
+layout laptop 'Spark':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 
 
 
