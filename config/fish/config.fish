@@ -84,7 +84,8 @@ function virtualenv_prompt
     end
 end
 
-set -gx EDITOR emacs
+set -gx EDITOR emacsclient -t
+set -gx VISUAL emacsclient -c -a emacs
 
 if status --is-login
     . ~/.config/fish/env.fish
@@ -119,4 +120,3 @@ end
 
 # added by pipsi (https://github.com/mitsuhiko/pipsi)
 set -x PATH /Users/jonathan/.local/bin $PATH
-
