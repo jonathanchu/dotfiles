@@ -63,6 +63,7 @@ layout sc 'Mailplane 3':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 layout sc 'Spotify':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 layout sc 'Messages':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 layout sc 'Spark':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
+layout sc 'Microsoft Teams':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 
 # Layout for display for laptop
 layout laptop 'Google Chrome':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
