@@ -8,6 +8,7 @@ brew tap homebrew/versions
 brew tap homebrew/science
 brew tap caskroom/fonts
 brew tap wagoodman/dive
+brew tap d12frosted/emacs-plus
 
 # Make sure we're up-to-date
 brew update
@@ -33,7 +34,7 @@ brew install cowsay
 brew install direnv
 brew install dive
 brew install elm
-brew install emacs
+brew install emacs-plus --with-no-titlebar
 brew install ffmpeg
 brew install fish
 brew install freetype
