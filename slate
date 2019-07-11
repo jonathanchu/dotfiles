@@ -75,7 +75,7 @@ layout laptop 'Mail':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 layout laptop 'Mailplane 3':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 layout laptop 'Spotify':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 layout laptop 'Messages':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
-layout laptop 'Spark':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
+layout laptop 'Visual Studio Code':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 
 
 
