@@ -96,7 +96,8 @@ if status --is-interactive
 end
 
 set PYENV_ROOT $HOME/.pyenv
-set PATH /usr/local/bin /usr/local/sbin $HOME/.local/bin $PYENV_ROOT/shims $HOME/bin $PATH
+set POSTGRES_ROOT /Applications/Postgres.app/Contents/Versions/latest/bin
+set PATH /usr/local/bin /usr/local/sbin $HOME/.local/bin $PYENV_ROOT/shims $HOME/bin $POSTGRES_ROOT $PATH
 
 if status --is-interactive
     . (pyenv init - | psub)
