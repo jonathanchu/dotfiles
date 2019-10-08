@@ -138,7 +138,6 @@ installcask fliqlo
 installcask fluid
 installcask flux
 installcask github
-installcask google-drive-file-stream
 installcask rowanj-gitx
 installcask handbrake
 installcask heroku
@@ -154,7 +153,6 @@ installcask mou
 installcask mysqlworkbench
 installcask ngrok
 installcask notion
-installcask nvalt
 installcask peepopen
 installcask pgadmin3
 installcask postgres
@@ -173,4 +171,3 @@ installcask visual-studio-code
 installcask vlc
 installcask wireshark
 installcask xquartz
-installcask zeplin
