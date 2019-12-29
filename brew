@@ -110,6 +110,7 @@ brew cask install font-anonymous-pro
 brew cask install font-meslo-lg
 brew cask install font-fira-mono
 brew cask install font-ia-writer-mono
+brew cask install font-ia-writer-duospace
 
 # Native apps
 brew install brew-cask
