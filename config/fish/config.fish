@@ -43,7 +43,7 @@ function fish_prompt
 end
 
 function git_current_branch -d 'Prints a human-readable representation of the current branch'
-    set -l ref (git symbolic-ref HEAD ^/dev/null; or git rev-parse --short HEAD ^/dev/null)
+    set -l ref (git symbolic-ref HEAD 2>/dev/null; or git rev-parse --short HEAD 2>/dev/null)
     if test -n "$ref"
         echo $ref | sed -e s,refs/heads/,,
         return 0
@@ -63,7 +63,7 @@ end
 
 function parse_git_dirty
     if git rev-parse --show-toplevel >/dev/null 2>&1
-        if test (git status 2> /dev/null ^&1 | tail -n1) != "nothing to commit, working tree clean"
+        if test (git status 2> /dev/null 2>&1 | tail -n1) != "nothing to commit, working tree clean"
             set_color red
             printf '(!)'
             set_color normal
@@ -100,7 +100,7 @@ set POSTGRES_ROOT /Applications/Postgres.app/Contents/Versions/latest/bin
 set PATH /usr/local/bin /usr/local/sbin $HOME/.local/bin $PYENV_ROOT/shims $HOME/bin $POSTGRES_ROOT $PATH
 
 if status --is-interactive
-    . (pyenv init - | psub)
+    source (pyenv init - | psub)
 end
 
 set -gx PYTHONDONTWRITEBYTECODE 1
