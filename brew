@@ -34,7 +34,7 @@ brew install cowsay
 brew install direnv
 brew install dive
 brew install elm
-brew install emacs-plus --with-no-titlebar
+brew install emacs-plus --with-no-titlebar --HEAD
 brew install ffmpeg
 brew install fish
 brew install freetype
@@ -139,6 +139,7 @@ installcask fliqlo
 installcask fluid
 installcask flux
 installcask github
+installcask google-drive-file-stream
 installcask rowanj-gitx
 installcask handbrake
 installcask heroku
@@ -154,6 +155,7 @@ installcask mou
 installcask mysqlworkbench
 installcask ngrok
 installcask notion
+installcask nvalt
 installcask peepopen
 installcask pgadmin3
 installcask postgres
@@ -172,3 +174,4 @@ installcask visual-studio-code
 installcask vlc
 installcask wireshark
 installcask xquartz
+installcask zeplin
