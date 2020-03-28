@@ -148,6 +148,7 @@ installcask insomnia
 installcask iterm2
 installcask java
 installcask kaleidoscope
+installcask kitty
 installcask licecap
 installcask mailplane
 installcask mactex
