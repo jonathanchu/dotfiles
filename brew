@@ -86,6 +86,7 @@ brew install pwgen
 brew install pypy
 brew install pyenv
 brew install redis
+brew install ripgrep
 brew install ruby
 brew install sbcl
 brew install selecta
