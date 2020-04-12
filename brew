@@ -160,6 +160,7 @@ installcask notion
 installcask nvalt
 installcask peepopen
 installcask pgadmin3
+installcask platypus
 installcask postgres
 installcask postico
 installcask sequel-pro
