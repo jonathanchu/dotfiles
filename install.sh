@@ -46,9 +46,6 @@ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poet
 echo "####### installing pipx"
 brew install pipx
 
-# echo "####### fixing osx"
-# bash ~/.osx
-
 # echo "####### install npm globals"
 # bash ~/...
 
