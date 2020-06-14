@@ -25,10 +25,10 @@ for name in *; do
 done
 
 # Bootstrap the environment
-sudo /usr/bin/xcodebuild -license
+sudo xcodebuild -license accept
 
 echo "####### installing homebrew"
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 echo "####### installing git"
 brew install git
@@ -40,14 +40,16 @@ bash ~/.brew
 # pip install -U pip
 # pip install -r ~/.requirements.txt
 
-echo "####### installing pipsi"
-curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python
-~/.pipsi
+echo "####### install poetry"
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
+
+echo "####### installing pipx"
+brew install pipx
 
 # echo "####### fixing osx"
 # bash ~/.osx
 
-echo "####### install npm globals"
+# echo "####### install npm globals"
 # bash ~/...
 
 echo "####### installing custom osx keybindings"
