@@ -119,9 +119,6 @@ if not functions -q fisher
     fish -c fisher
 end
 
-# added by pipsi (https://github.com/mitsuhiko/pipsi)
-set -x PATH /Users/jonathan/.local/bin $PATH
-
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
 [ -f /Users/jonathan/projects/simplecontacts.com/iris.js/postProcess/node_modules/tabtab/.completions/serverless.fish ]
