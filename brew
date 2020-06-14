@@ -146,6 +146,7 @@ installcask sketch
 installcask slack
 installcask slate
 installcask spotify
+installcask tableplus
 installcask tripmode
 installcask versions
 installcask viscosity
