@@ -72,6 +72,7 @@ brew install nmap
 brew install node
 brew install notmuch
 brew install nvie/tap/git-toolbelt
+brew install offlineimap
 brew install openssl
 brew install ossp-uuid
 brew install pandoc
