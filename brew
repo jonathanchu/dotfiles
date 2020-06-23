@@ -47,6 +47,7 @@ brew install graphviz
 brew install htop
 brew install hub
 brew install hugo
+brew install isync
 brew install jpeg
 brew install jq
 brew install leiningen
@@ -66,6 +67,7 @@ brew install memcached
 brew install mercurial
 brew install mongodb-community@4.2
 brew install moreutils
+brew install msmtp
 brew install mtr
 brew install mycli
 brew install mysql
