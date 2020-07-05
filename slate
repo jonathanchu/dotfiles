@@ -70,10 +70,10 @@ bind 3:${modal-key} sequence layout sc
 bind 4:${modal-key} sequence layout laptop
 
 # Resize bindings
-# bind right:alt       resize +10% +0
-# bind left:alt        resize -10% +0
-# bind up:alt          resize +0   -10%
-# bind down:alt        resize +0   +10%
+bind right:alt       resize +10% +0
+bind left:alt        resize -10% +0
+bind up:alt          resize +0   -10%
+bind down:alt        resize +0   +10%
 
 # Positioning bindings
 # Bindings from https://github.com/mitchellh/dotfiles/blob/master/slate
