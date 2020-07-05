@@ -35,20 +35,9 @@ alias bot-right-corner move ${sox}+${ssx}/2;${soy}+${ssy}/2 ${ssx}/2;${ssy}/2
 # Layouts
 #-------------------------------------------------------------------------------
 # Layout for LG UltraWide
-layout ultrawide 'Google Chrome':REPEAT move ${sox};${soy} (${ssx}/12)*4;${ssy}
 layout ultrawide 'Firefox':REPEAT move ${sox};${soy} (${ssx}/12)*4;${ssy}
 layout ultrawide 'Emacs':REPEAT move ${sox}+(${ssx}/12*4)+2;${soy} (${ssx}/12)*4+2;${ssy}
 layout ultrawide 'iTerm2':REPEAT move ${sox}+(${ssx}/12*8);${soy} (${ssx}/12)*4;${ssy}
-
-# Layout for display at Tigerlabs
-layout tiger 'Google Chrome':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
-layout tiger 'Firefox':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
-layout tiger 'Emacs':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
-layout tiger 'iTerm2':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
-layout tiger 'Slack':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
-layout tiger 'Spotify':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
-layout tiger 'Messages':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
-layout tiger 'Spark':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
 
 # Layout for display at SC
 layout sc 'Google Chrome':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
@@ -58,7 +47,6 @@ layout sc 'iTerm2':REPEAT move ${sox};${soy} ${ssx};${ssy} 1
 layout sc 'Slack':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 layout sc 'Spotify':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 layout sc 'Messages':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
-layout sc 'Spark':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 layout sc 'Microsoft Teams':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 
 # Layout for display for laptop
@@ -78,7 +66,6 @@ layout laptop 'Visual Studio Code':REPEAT move ${sox};${soy} ${ssx};${ssy} 0
 #-------------------------------------------------------------------------------
 # Layout activation bindings
 bind 1:${modal-key} sequence layout ultrawide
-bind 2:${modal-key} sequence layout tiger
 bind 3:${modal-key} sequence layout sc
 bind 4:${modal-key} sequence layout laptop
 
