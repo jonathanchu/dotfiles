@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+
+/bin/bash /Users/jonathan/projects/dotfiles/bin/emacs-light-theme
+osascript /Users/jonathan/projects/dotfiles/bin/iterm-light-theme
