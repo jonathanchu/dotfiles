@@ -111,6 +111,7 @@ brew install zmq
 brew cask install font-inconsolata
 brew cask install font-anonymous-pro
 brew cask install font-meslo-lg
+brew cask install font-fira-code
 brew cask install font-fira-mono
 brew cask install font-ia-writer-mono
 brew cask install font-ia-writer-duospace
