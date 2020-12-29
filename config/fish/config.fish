@@ -107,7 +107,8 @@ set -gx PYTHONDONTWRITEBYTECODE 1
 
 set -gx __fish_initialized 1
 
-eval (direnv hook fish)
+# eval (direnv hook fish)
+direnv hook fish | source
 
 test -e ~/.iterm2_shell_integration.fish
 and source ~/.iterm2_shell_integration.fish
@@ -119,15 +120,15 @@ if not functions -q fisher
     fish -c fisher
 end
 
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[ -f /Users/jonathan/projects/simplecontacts.com/iris.js/postProcess/node_modules/tabtab/.completions/serverless.fish ]
-and . /Users/jonathan/projects/simplecontacts.com/iris.js/postProcess/node_modules/tabtab/.completions/serverless.fish
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[ -f /Users/jonathan/projects/simplecontacts.com/iris.js/postProcess/node_modules/tabtab/.completions/sls.fish ]
-and . /Users/jonathan/projects/simplecontacts.com/iris.js/postProcess/node_modules/tabtab/.completions/sls.fish
-# tabtab source for slss package
-# uninstall by removing these lines or running `tabtab uninstall slss`
-[ -f /Users/jonathan/projects/simplecontacts.com/iris.js/postProcess/node_modules/tabtab/.completions/slss.fish ]
-and . /Users/jonathan/projects/simplecontacts.com/iris.js/postProcess/node_modules/tabtab/.completions/slss.fish
+# # tabtab source for serverless package
+# # uninstall by removing these lines or running `tabtab uninstall serverless`
+# [ -f /Users/jonathan/projects/simplecontacts.com/iris.js/postProcess/node_modules/tabtab/.completions/serverless.fish ]
+# and . /Users/jonathan/projects/simplecontacts.com/iris.js/postProcess/node_modules/tabtab/.completions/serverless.fish
+# # tabtab source for sls package
+# # uninstall by removing these lines or running `tabtab uninstall sls`
+# [ -f /Users/jonathan/projects/simplecontacts.com/iris.js/postProcess/node_modules/tabtab/.completions/sls.fish ]
+# and . /Users/jonathan/projects/simplecontacts.com/iris.js/postProcess/node_modules/tabtab/.completions/sls.fish
+# # tabtab source for slss package
+# # uninstall by removing these lines or running `tabtab uninstall slss`
+# [ -f /Users/jonathan/projects/simplecontacts.com/iris.js/postProcess/node_modules/tabtab/.completions/slss.fish ]
+# and . /Users/jonathan/projects/simplecontacts.com/iris.js/postProcess/node_modules/tabtab/.completions/slss.fish
