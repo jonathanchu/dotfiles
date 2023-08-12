@@ -4,8 +4,8 @@
 # By way of proxy through https://github.com/jacobian/dotfiles/blob/master/.brew
 
 # Tap some kegs
-brew tap homebrew/versions
-brew tap homebrew/science
+# brew tap homebrew/versions
+# brew tap homebrew/science
 brew tap homebrew/cask-fonts
 brew tap daviderestivo/emacs-head
 brew tap mongodb/brew
