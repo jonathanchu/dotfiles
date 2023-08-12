@@ -31,7 +31,7 @@ brew install cask
 brew install cmake
 brew install cowsay
 brew install direnv
-brew install emacs-head@28 --with-cocoa --with-imagemagick --with-retro-icon-gnu-head
+brew install emacs-head@29 --with-cocoa --with-imagemagick --with-retro-icon-gnu-head
 brew install ffmpeg
 brew install fish
 brew install freetype
@@ -120,36 +120,36 @@ brew cask install font-ibm-plex-mono
 # Native apps
 brew install brew-cask
 function installcask() {
-    if brew cask info "${@}" | grep "Not installed" > /dev/null; then
-        brew cask install "${@}"
+    if brew info --cask "${@}" | grep "Not installed" > /dev/null; then
+        brew install --cask "${@}"
     else
         echo "${@} is already installed."
     fi
 }
 
-installcask alfred
+# installcask alfred
 installcask arq
 installcask atext
-installcask bartender
+# installcask bartender
 installcask coconutbattery
 installcask dash
-installcask docker
-installcask fliqlo
+# installcask docker
+# installcask fliqlo
 installcask fluid
 installcask github
 installcask rowanj-gitx
-installcask handbrake
+# installcask handbrake
 installcask imageoptim
-installcask insomnia
+# installcask insomnia
 installcask iterm2
 installcask java
 installcask kaleidoscope
 installcask licecap
 installcask mactex
-installcask ngrok
-installcask notion
+# installcask ngrok
+# installcask notion
 installcask postgres
-installcask sketch
+# installcask sketch
 installcask slack
 installcask slate
 installcask spotify
