@@ -108,14 +108,14 @@ brew install youtube-dl
 brew install zmq
 
 # Fonts
-brew cask install font-inconsolata
-brew cask install font-anonymous-pro
-brew cask install font-meslo-lg
-brew cask install font-fira-code
-brew cask install font-fira-mono
-brew cask install font-ia-writer-mono
-brew cask install font-ia-writer-duospace
-brew cask install font-ibm-plex-mono
+brew install --cask font-inconsolata
+brew install --cask font-anonymous-pro
+brew install --cask font-meslo-lg
+brew install --cask font-fira-code
+brew install --cask font-fira-mono
+brew install --cask font-ia-writer-mono
+brew install --cask font-ia-writer-duospace
+brew install --cask font-ibm-plex-mono
 
 # Native apps
 brew install brew-cask
