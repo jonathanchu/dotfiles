@@ -4,11 +4,7 @@
 # By way of proxy through https://github.com/jacobian/dotfiles/blob/master/.brew
 
 # Tap some kegs
-# brew tap homebrew/versions
-# brew tap homebrew/science
-brew tap homebrew/cask-fonts
 brew tap daviderestivo/emacs-head
-brew tap mongodb/brew
 
 # Make sure we're up-to-date
 brew update
@@ -64,8 +60,6 @@ brew install libyaml
 brew install markdown
 brew install mcrypt
 brew install memcached
-brew install mercurial
-brew install mongodb-community@4.2
 brew install moreutils
 brew install msmtp
 brew install mtr
@@ -79,7 +73,6 @@ brew install openssl
 brew install ossp-uuid
 brew install pandoc
 brew install pidof
-# brew install pipenv
 brew install pkg-config
 brew install png2ico
 brew install pngquant
@@ -104,18 +97,8 @@ brew install watch
 brew install watchman
 brew install wget
 brew install yarn
-brew install youtube-dl
 brew install zmq
 
-# Fonts
-brew install --cask font-inconsolata
-brew install --cask font-anonymous-pro
-brew install --cask font-meslo-lg
-brew install --cask font-fira-code
-brew install --cask font-fira-mono
-brew install --cask font-ia-writer-mono
-brew install --cask font-ia-writer-duospace
-brew install --cask font-ibm-plex-mono
 
 # Native apps
 brew install brew-cask
@@ -127,36 +110,12 @@ function installcask() {
     fi
 }
 
-# installcask alfred
-installcask arq
-installcask atext
-# installcask bartender
-installcask coconutbattery
-installcask dash
-# installcask docker
-# installcask fliqlo
-installcask fluid
-installcask github
 installcask rowanj-gitx
-# installcask handbrake
-installcask imageoptim
-# installcask insomnia
+installcask handbrake
 installcask iterm2
-installcask java
-installcask kaleidoscope
-installcask licecap
 installcask mactex
-# installcask ngrok
-# installcask notion
 installcask postgres
-# installcask sketch
-installcask slack
 installcask slate
-installcask spotify
 installcask tableplus
-installcask tripmode
-installcask versions
-installcask viscosity
-installcask visual-studio-code
 installcask vlc
 installcask xquartz
