@@ -6,13 +6,16 @@ Bass makes it easy to use utilities written for Bash in [fish shell](https://git
 
 Regular bash scripts can be used in fish shell just as scripts written in any language with proper shebang or explicitly using the interpreter (i.e. using `bash script.sh`). However, many utilities, such as virtualenv, modify the shell environment and need to be sourced, and therefore cannot be used in fish. Sometimes, counterparts (such as the excellent [virtualfish](http://virtualfish.readthedocs.org/en/latest/)) are created, but that's often not the case.
 
-Bass is created to make it possible to use bash uilities in fish shell without any modification. It works by capturing what environment variables are modified by the utility of interest, and replay the changes in fish.
+Bass is created to make it possible to use bash utilities in fish shell without any modification. It works by capturing what environment variables are modified by the utility of interest, and replay the changes in fish.
+
+You might not need Bass for simple use cases. A great simple alternative (suggested by @jorgebucaran) is to just use `exec bash -c "source some-bash-setup.sh; exec fish"`.
 
 # Installation
 
 Bass is compatible with fish versions 2.6.0 and later.
 
-## Manual
+
+## Manually
 
 Use the Makefile.
 
@@ -22,27 +25,27 @@ Use the Makefile.
 
 Relaunch the shell for the change to take effect.
 
-## Using [Fisher](https://github.com/jorgebucaran/fisher)
+## With [Oh My Fish](https://github.com/oh-my-fish/oh-my-fish)
 
-```fish
-fisher add edc/bass
+```console
+omf install bass
 ```
 
-## Using [Fundle](https://github.com/tuvistavie/fundle)
+## With [Fisher](https://github.com/jorgebucaran/fisher)
+
+```console
+fisher install edc/bass
+```
+
+## With [Fundle](https://github.com/tuvistavie/fundle)
 
 Add
 
-```
+```console
 fundle plugin 'edc/bass'
 ```
 
 to your fish config, relaunch the shell and run `fundle install`.
-
-## Using [Oh My Fish](https://github.com/oh-my-fish/oh-my-fish)
-
-```fish
-omf install bass
-```
 
 # Example
 
@@ -99,11 +102,9 @@ nvm> function nvm
 > nvm ls-remote
         v0.1.14
         v0.1.15
+        
+> funcsave nvm
 ...
 ```
 
 (`--no-use` is an important option to `nvm.sh`. See [#13](https://github.com/edc/bass/issues/13) for background.)
-
-# Caveats
-
-At the moment, Bass may or may not work with your favorite interactive utilities, such as ssh-add. Reopen and add a comment to [#14](https://github.com/edc/bass/issues/14) if you encounter an issue related to that.
