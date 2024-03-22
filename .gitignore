@@ -10,5 +10,6 @@
 /config/pgcli/log
 /config/pgcli/history
 /config/yarn/global/node_modules/
+/config/iterm2
 /lein/repl-history
 /lein/repl-port
