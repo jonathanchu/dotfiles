@@ -27,7 +27,7 @@ brew install cask
 brew install cmake
 brew install cowsay
 brew install direnv
-brew install emacs-head@29 --with-cocoa --with-imagemagick --with-retro-icon-gnu-head
+brew install emacs-head@29 --with-cocoa --with-imagemagick --with-GoldenYak
 brew install ffmpeg
 brew install fish
 brew install freetype
