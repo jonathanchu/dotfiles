@@ -19,6 +19,7 @@ brew install readline
 brew install ack
 brew install ag
 brew install ascii
+brew install asitop
 brew install aspell
 brew install autoconf
 brew install automake
