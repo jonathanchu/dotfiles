@@ -131,3 +131,6 @@ end
 # # uninstall by removing these lines or running `tabtab uninstall slss`
 # [ -f /Users/jonathan/projects/simplecontacts.com/iris.js/postProcess/node_modules/tabtab/.completions/slss.fish ]
 # and . /Users/jonathan/projects/simplecontacts.com/iris.js/postProcess/node_modules/tabtab/.completions/slss.fish
+
+# Added by Antigravity
+fish_add_path /Users/jonathan/.antigravity/antigravity/bin
