@@ -74,3 +74,5 @@
     hideCampaign = true
 [github]
     user = jonathanchu
+[init]
+        defaultBranch = main
