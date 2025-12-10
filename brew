@@ -25,6 +25,8 @@ brew install autoconf
 brew install automake
 brew install bat
 brew install cask
+brew install claude
+brew install claude-code
 brew install cmake
 brew install cowsay
 brew install direnv
