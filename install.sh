@@ -34,7 +34,8 @@ echo "####### installing git"
 brew install git
 
 echo "####### homebrewing the world"
-bash ~/.brew
+# bash ~/.brew
+brew bundle --global
 
 # echo "####### python"
 # pip install -U pip
