@@ -50,6 +50,11 @@ brew bundle --global
 # echo "####### install npm globals"
 # bash ~/...
 
+# Install nvm
+# curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+# Set a default version
+# nvm install 25
+
 echo "####### installing custom osx keybindings"
 mkdir -p ~/Library/KeyBindings
 ln -s $PWD/osx_emacs_keybindings.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
