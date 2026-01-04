@@ -2,8 +2,8 @@ font-size = 12
 font-family = JetBrains Mono
 background-blur-radius = 20
 macos-non-native-fullscreen = visible-menu
-macos-option-as-alt = left
+macos-option-as-alt = true
 mouse-hide-while-typing = true
-background = fafafa
-foreground = 383941
 keybind = shift+enter=text:\x1b\r
+theme = Catppuccin Latte
+window-decoration = true
