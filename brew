@@ -30,7 +30,7 @@ brew install claude-code
 brew install cmake
 brew install cowsay
 brew install direnv
-brew install emacs-head@29 --with-cocoa --with-imagemagick --with-GoldenYak
+brew install emacs-head@30 --with-cocoa --with-imagemagick --with-GoldenYak
 brew install ffmpeg
 brew install fish
 brew install freetype
