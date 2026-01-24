@@ -61,7 +61,6 @@ brew install libsvg
 brew install libtool
 brew install libyaml
 brew install markdown
-# brew install mcrypt
 brew install memcached
 brew install moreutils
 brew install msmtp
@@ -118,8 +117,6 @@ installcask rowanj-gitx
 installcask handbrake
 installcask iterm2
 installcask mactex
-# installcask postgres
-# installcask slate
 installcask tableplus
 installcask vlc
 installcask xquartz
