@@ -74,6 +74,7 @@ brew install node
 brew install notmuch
 brew install nvie/tap/git-toolbelt
 brew install ollama
+brew install onefetch
 brew install openssl
 brew install ossp-uuid
 brew install pandoc
