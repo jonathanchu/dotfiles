@@ -31,6 +31,7 @@ brew install cmake
 brew install cowsay
 brew install direnv
 brew install emacs-head@30 --with-cocoa --with-imagemagick --with-GoldenYak
+brew install fastfetch
 brew install ffmpeg
 brew install fish
 brew install freetype
