@@ -38,6 +38,7 @@ brew install freetype
 brew install fzf
 brew install gdbm
 brew install gettext
+brew install gh
 brew install gist
 brew install git-lfs
 brew install glances
