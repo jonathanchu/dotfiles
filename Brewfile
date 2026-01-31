@@ -1,6 +1,7 @@
 tap "daviderestivo/emacs-head"
 tap "nvie/tap"
 brew "ack"
+brew "act"
 brew "libpng"
 brew "openssl@3"
 brew "ascii"
