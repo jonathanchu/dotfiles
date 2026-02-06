@@ -106,6 +106,7 @@ brew install watch
 brew install watchman
 brew install wget
 brew install yarn
+brew install zed
 brew install zmq
 
 
