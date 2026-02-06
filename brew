@@ -64,6 +64,7 @@ brew install libpng
 brew install libsvg
 brew install libtool
 brew install libyaml
+brew install localsend
 brew install markdown
 brew install memcached
 brew install moreutils
