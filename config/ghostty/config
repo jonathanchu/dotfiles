@@ -5,6 +5,10 @@ macos-non-native-fullscreen = visible-menu
 macos-option-as-alt = true
 mouse-hide-while-typing = true
 keybind = shift+enter=text:\x1b\r
+keybind = ctrl+shift+enter=new_split:right
+keybind = ctrl+shift+o=new_split:down
+keybind = ctrl+shift+bracket_left=goto_split:previous
+keybind = ctrl+shift+bracket_right=goto_split:next
 theme = light:Catppuccin Latte,dark:Catppuccin Frappe
 window-decoration = true
 window-inherit-working-directory = true
