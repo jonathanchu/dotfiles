@@ -1,16 +1,25 @@
-font-size = 15
+# Font
 font-family = JetBrains Mono
+font-size = 15
+
+# Appearance
+theme = light:Catppuccin Latte,dark:Catppuccin Frappe
 background-blur-radius = 20
+cursor-style = block
+shell-integration-features = no-cursor
+
+# Window
+window-decoration = true
+window-inherit-working-directory = true
 macos-non-native-fullscreen = visible-menu
+
+# Input
 macos-option-as-alt = true
 mouse-hide-while-typing = true
+
+# Keybindings
 keybind = shift+enter=text:\x1b\r
 keybind = ctrl+shift+enter=new_split:right
 keybind = ctrl+shift+o=new_split:down
 keybind = ctrl+shift+bracket_left=goto_split:previous
 keybind = ctrl+shift+bracket_right=goto_split:next
-theme = light:Catppuccin Latte,dark:Catppuccin Frappe
-window-decoration = true
-window-inherit-working-directory = true
-cursor-style = block
-shell-integration-features = no-cursor
