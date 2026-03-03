@@ -9,18 +9,6 @@ alias mkdir 'mkdir -p'
 alias du 'du -kh'
 alias df 'df -kh'
 
-# alias pm 'python manage.py'
-alias pmm 'python manage.py migrate'
-alias pmmm 'python manage.py makemigrations'
-alias pms 'python manage.py shell'
-alias pmsp 'python manage.py shell_plus'
-alias pmr 'python manage.py runserver'
-alias ipn 'ipython notebook'
-alias pmsm 'python manage.py showmigrations'
-alias pmspnb 'python manage.py shell_plus --notebook'
-alias pmmmn 'python manage.py makemigrations --name'
-alias pmmmen 'python manage.py makemigrations --empty --name'
-
 alias top btop
 
 alias pkill-emacs 'pkill -SIGUSR2 Emacs'
