@@ -1,6 +1,7 @@
 . ~/.config/fish/aliases.fish
 
 set -gx fish_greeting ''
+set -g fish_prompt_pwd_dir_length 1
 
 function fish_prompt
     set last_status $status
@@ -69,7 +70,7 @@ function parse_git_dirty
             set_color normal
         else
             set_color green
-            printf '(\u2714)'
+            printf '(✔)'
             set_color normal
         end
     end
@@ -95,45 +96,34 @@ if status --is-interactive
     . ~/.config/fish/private.fish
 end
 
-set POSTGRES_ROOT /Applications/Postgres.app/Contents/Versions/latest/bin
-set PATH /usr/local/bin /usr/local/sbin $HOME/.local/bin $HOME/.cargo/bin $HOME/bin /opt/homebrew/bin $POSTGRES_ROOT $PATH
+# Cross-platform paths
+fish_add_path $HOME/.local/bin $HOME/.cargo/bin $HOME/bin
 
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh" # This loads nvm
-# [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+# macOS-specific
+if test (uname) = Darwin
+    fish_add_path /opt/homebrew/bin /usr/local/bin /usr/local/sbin
+    if test -d /Applications/Postgres.app
+        fish_add_path /Applications/Postgres.app/Contents/Versions/latest/bin
+    end
+    if test -d $HOME/.antigravity/antigravity/bin
+        fish_add_path $HOME/.antigravity/antigravity/bin
+    end
+end
+
+# Linux-specific (or cross-platform conditional)
+if test -d $HOME/.opencode/bin
+    fish_add_path $HOME/.opencode/bin
+end
+if test -d $HOME/.git-toolbelt
+    fish_add_path $HOME/.git-toolbelt
+end
+if test -d $HOME/go/bin
+    fish_add_path $HOME/go/bin
+end
 
 set -gx PYTHONDONTWRITEBYTECODE 1
 
-set -gx __fish_initialized 1
-
-# eval (direnv hook fish)
 direnv hook fish | source
 
 test -e ~/.iterm2_shell_integration.fish
 and source ~/.iterm2_shell_integration.fish
-
-if not functions -q fisher
-    set -q XDG_CONFIG_HOME
-    or set XDG_CONFIG_HOME ~/.config
-    curl https://git.io/fisher --create-dirs -sLo $XDG_CONFIG_HOME/fish/functions/fisher.fish
-    fish -c fisher
-end
-
-# # tabtab source for serverless package
-# # uninstall by removing these lines or running `tabtab uninstall serverless`
-# [ -f /Users/jonathan/projects/simplecontacts.com/iris.js/postProcess/node_modules/tabtab/.completions/serverless.fish ]
-# and . /Users/jonathan/projects/simplecontacts.com/iris.js/postProcess/node_modules/tabtab/.completions/serverless.fish
-# # tabtab source for sls package
-# # uninstall by removing these lines or running `tabtab uninstall sls`
-# [ -f /Users/jonathan/projects/simplecontacts.com/iris.js/postProcess/node_modules/tabtab/.completions/sls.fish ]
-# and . /Users/jonathan/projects/simplecontacts.com/iris.js/postProcess/node_modules/tabtab/.completions/sls.fish
-# # tabtab source for slss package
-# # uninstall by removing these lines or running `tabtab uninstall slss`
-# [ -f /Users/jonathan/projects/simplecontacts.com/iris.js/postProcess/node_modules/tabtab/.completions/slss.fish ]
-# and . /Users/jonathan/projects/simplecontacts.com/iris.js/postProcess/node_modules/tabtab/.completions/slss.fish
-
-# Added by Antigravity
-fish_add_path /Users/jonathan/.antigravity/antigravity/bin
-
-# opencode
-fish_add_path /home/jonathan/.opencode/bin

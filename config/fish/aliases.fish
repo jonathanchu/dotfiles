@@ -1,6 +1,10 @@
 set LS_COLORS dxfxcxdxbxegedabagacad
 
-alias ls 'command ls -FG'
+if test (uname) = Darwin
+    alias ls 'command ls -FG'
+else
+    alias ls 'command ls -F --color=auto'
+end
 alias l ls
 alias ll 'ls -la'
 alias rm 'rm -i'
