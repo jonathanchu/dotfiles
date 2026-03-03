@@ -21,7 +21,7 @@ alias pmspnb 'python manage.py shell_plus --notebook'
 alias pmmmn 'python manage.py makemigrations --name'
 alias pmmmen 'python manage.py makemigrations --empty --name'
 
-alias top glances
+alias top btop
 
 alias pkill-emacs 'pkill -SIGUSR2 Emacs'
 
