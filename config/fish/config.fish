@@ -134,3 +134,6 @@ end
 
 # Added by Antigravity
 fish_add_path /Users/jonathan/.antigravity/antigravity/bin
+
+# opencode
+fish_add_path /home/jonathan/.opencode/bin
