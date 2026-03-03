@@ -9,9 +9,6 @@ alias mkdir 'mkdir -p'
 alias du 'du -kh'
 alias df 'df -kh'
 
-# Colorized cat (will guess file type based on contents)
-alias ccat 'pygmentize -g'
-
 # alias pm 'python manage.py'
 alias pmm 'python manage.py migrate'
 alias pmmm 'python manage.py makemigrations'
