@@ -23,3 +23,7 @@ alias .... 'cd ../../..'
 alias ..... 'cd ../../../..'
 
 alias cat 'bat --theme=TwoDark'
+
+if test -e /etc/fedora-release
+    alias open xdg-open
+end
