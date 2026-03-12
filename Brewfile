@@ -1,7 +1,6 @@
 tap "arimxyer/tap"
 tap "daviderestivo/emacs-head"
 tap "nvie/tap"
-brew "ack"
 brew "act"
 brew "asitop"
 brew "aspell"
