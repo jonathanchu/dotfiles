@@ -124,6 +124,3 @@ end
 set -gx PYTHONDONTWRITEBYTECODE 1
 
 direnv hook fish | source
-
-test -e ~/.iterm2_shell_integration.fish
-and source ~/.iterm2_shell_integration.fish

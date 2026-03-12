@@ -1,3 +1,0 @@
-tell application "iTerm2"
-    launch API script named "iterm2_dark_theme.py"
-end tell
