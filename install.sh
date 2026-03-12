@@ -29,7 +29,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
   sudo xcodebuild -license accept
 
   echo "####### installing homebrew"
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
   echo "####### homebrewing the world"
   brew bundle --global
