@@ -1,7 +1,0 @@
-autopep8
-flake8
-importmagic
-isort
-rope
-six
-virtualenv
