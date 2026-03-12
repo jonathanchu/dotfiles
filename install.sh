@@ -30,9 +30,6 @@ sudo xcodebuild -license accept
 echo "####### installing homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-echo "####### installing git"
-brew install git
-
 echo "####### homebrewing the world"
 # bash ~/.brew
 brew bundle --global
