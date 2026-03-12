@@ -50,11 +50,7 @@
     pr = "!f() { git fetch origin pull/$1/head:pr-$1 && git checkout pr-$1; }; f"
 
 [core]
-    excludesfile = /Users/jonathan/.gitignore_global
-
-[filter "media"]
-    clean = git-media-clean %f
-    smudge = git-media-smudge %f
+    excludesfile = ~/.gitignore_global
 
 [filter "lfs"]
     clean = git-lfs clean -- %f
