@@ -31,26 +31,7 @@ echo "####### installing homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 echo "####### homebrewing the world"
-# bash ~/.brew
 brew bundle --global
-
-# echo "####### python"
-# pip install -U pip
-# pip install -r ~/.requirements.txt
-
-#echo "####### install poetry"
-#curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
-
-#echo "####### installing pipx"
-#brew install pipx
-
-# echo "####### install npm globals"
-# bash ~/...
-
-# Install nvm
-# curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
-# Set a default version
-# nvm install 25
 
 echo "####### installing custom osx keybindings"
 mkdir -p ~/Library/KeyBindings
