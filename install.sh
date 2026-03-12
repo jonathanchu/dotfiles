@@ -24,15 +24,17 @@ for name in *; do
   fi
 done
 
-# Bootstrap the environment
-sudo xcodebuild -license accept
+if [[ "$(uname)" == "Darwin" ]]; then
+  # Bootstrap the environment
+  sudo xcodebuild -license accept
 
-echo "####### installing homebrew"
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  echo "####### installing homebrew"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-echo "####### homebrewing the world"
-brew bundle --global
+  echo "####### homebrewing the world"
+  brew bundle --global
 
-echo "####### installing custom osx keybindings"
-mkdir -p ~/Library/KeyBindings
-ln -s $PWD/osx_emacs_keybindings.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
+  echo "####### installing custom osx keybindings"
+  mkdir -p ~/Library/KeyBindings
+  ln -s $PWD/osx_emacs_keybindings.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
+fi
