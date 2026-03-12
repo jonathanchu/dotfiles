@@ -1,0 +1,30 @@
+local o = vim.opt
+
+o.showmode = true
+o.laststatus = 2
+o.tabstop = 4
+o.shiftwidth = 4
+o.scrolloff = 3
+o.showcmd = true
+o.hlsearch = true
+o.incsearch = true
+o.ruler = true
+o.visualbell = false
+o.backup = false
+o.number = true
+o.numberwidth = 4
+o.ignorecase = true
+o.smartcase = true
+o.wrap = false
+o.title = false
+o.backspace = "indent,eol,start"
+o.modeline = true
+o.modelines = 3
+o.shortmess = "atI"
+o.startofline = false
+o.autoindent = true
+o.copyindent = true
+o.whichwrap = "b,s,h,l,<,>,[,]"
+o.undolevels = 200
+o.wildignore = "*.o,*.obj,*.bak,*.exe,*.pyc,*.DS_Store,*.db"
+o.statusline = "%F%m%r%h%w [TYPE=%Y %{&ff}] [%l/%L (%p%%)]"
