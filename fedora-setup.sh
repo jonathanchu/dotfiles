@@ -22,6 +22,7 @@ sudo dnf install -y \
   tmux \
   gh \
   gnupg2 \
+  go \
   gcc \
   gcc-c++ \
   make \
