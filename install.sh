@@ -1,40 +1,125 @@
 #!/usr/bin/env bash
 #
-# This installation is destructive, as it removes exisitng files/directories.
+# This installation is destructive, as it removes existing files/directories.
 # Use at your own risk.
 #
 # Taken from https://github.com/mitchellh/dotfiles/blob/master/install.sh
 
-for name in *; do
-  if [ ! $name == "README.md" -a ! $name == "install.sh" ]; then
-    target="$HOME/.$name"
+# Symlink a source to a target, removing any existing file/symlink/directory
+link_file() {
+  local src="$1"
+  local target="$2"
 
-    if [ $name == "bin" ]; then
-      target="$HOME/$name"
-    fi
-
-    if [ -h $target ]; then
-      rm $target
-    elif [ -d $target ]; then
-      rm -rf $target
-    fi
-
-    ln -s "$PWD/$name" "$target"
-    echo "Linked $PWD/$name to $target."
+  if [ -h "$target" ]; then
+    rm "$target"
+  elif [ -d "$target" ]; then
+    rm -rf "$target"
+  elif [ -f "$target" ]; then
+    rm "$target"
   fi
+
+  ln -s "$src" "$target"
+  echo "Linked $src to $target."
+}
+
+# Symlink top-level dotfiles and directories
+for name in *; do
+  if [ "$name" == "README.md" ] || \
+     [ "$name" == "install.sh" ] || \
+     [ "$name" == "config" ] || \
+     [ "$name" == "LICENSE" ] || \
+     [ "$name" == "Brewfile" ] || \
+     [ "$name" == "npm-globals.sh" ] || \
+     [ "$name" == "get_ghostty_themes.sh" ] || \
+     [ "$name" == "osx_emacs_keybindings.dict" ]; then
+    continue
+  fi
+
+  target="$HOME/.$name"
+
+  if [ "$name" == "bin" ]; then
+    target="$HOME/$name"
+  fi
+
+  link_file "$PWD/$name" "$target"
 done
 
+# Symlink XDG config directories (~/.config/<app>)
+if [ -d "config" ]; then
+  mkdir -p "$HOME/.config"
+  for app in config/*; do
+    app_name="$(basename "$app")"
+    link_file "$PWD/$app" "$HOME/.config/$app_name"
+  done
+fi
+
+# OS-specific setup
 if [[ "$(uname)" == "Darwin" ]]; then
+  echo "####### macOS detected"
+
   # Bootstrap the environment
   sudo xcodebuild -license accept
 
   echo "####### installing homebrew"
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  if ! command -v brew &>/dev/null; then
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  else
+    echo "Homebrew already installed, skipping."
+  fi
 
   echo "####### homebrewing the world"
   brew bundle --global
 
   echo "####### installing custom osx keybindings"
   mkdir -p ~/Library/KeyBindings
-  ln -s $PWD/osx_emacs_keybindings.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
+  link_file "$PWD/osx_emacs_keybindings.dict" ~/Library/KeyBindings/DefaultKeyBinding.dict
+
+elif [[ "$(uname)" == "Linux" ]]; then
+  echo "####### Linux detected"
+
+  # Detect distro
+  if [ -f /etc/os-release ]; then
+    . /etc/os-release
+    DISTRO="$ID"
+  fi
+
+  if [[ "$DISTRO" == "fedora" ]]; then
+    echo "####### Fedora detected"
+
+    echo "####### installing packages via dnf"
+    sudo dnf install -y \
+      neovim \
+      fish \
+      git \
+      git-lfs \
+      ripgrep \
+      bat \
+      btop \
+      jq \
+      tmux \
+      gh \
+      gnupg2 \
+      gcc \
+      gcc-c++ \
+      make \
+      cmake \
+      unzip \
+      curl \
+      fontconfig
+
+    # Install JetBrains Mono Nerd Font
+    if ! fc-list | grep -qi "JetBrainsMono Nerd Font"; then
+      echo "####### installing JetBrains Mono Nerd Font"
+      mkdir -p ~/.local/share/fonts
+      cd /tmp
+      curl -fLO https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.tar.xz
+      mkdir -p JetBrainsMono && tar -xf JetBrainsMono.tar.xz -C JetBrainsMono
+      cp JetBrainsMono/*.ttf ~/.local/share/fonts/
+      fc-cache -fv
+      rm -rf JetBrainsMono JetBrainsMono.tar.xz
+      cd -
+    else
+      echo "JetBrains Mono Nerd Font already installed, skipping."
+    fi
+  fi
 fi
