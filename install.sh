@@ -31,7 +31,8 @@ for name in *; do
      [ "$name" == "Brewfile" ] || \
      [ "$name" == "npm-globals.sh" ] || \
      [ "$name" == "get_ghostty_themes.sh" ] || \
-     [ "$name" == "osx_emacs_keybindings.dict" ]; then
+     [ "$name" == "osx_emacs_keybindings.dict" ] || \
+     [ "$name" == "fedora-setup.sh" ]; then
     continue
   fi
 
@@ -85,41 +86,6 @@ elif [[ "$(uname)" == "Linux" ]]; then
 
   if [[ "$DISTRO" == "fedora" ]]; then
     echo "####### Fedora detected"
-
-    echo "####### installing packages via dnf"
-    sudo dnf install -y \
-      neovim \
-      fish \
-      git \
-      git-lfs \
-      ripgrep \
-      bat \
-      btop \
-      jq \
-      tmux \
-      gh \
-      gnupg2 \
-      gcc \
-      gcc-c++ \
-      make \
-      cmake \
-      unzip \
-      curl \
-      fontconfig
-
-    # Install JetBrains Mono Nerd Font
-    if ! fc-list | grep -qi "JetBrainsMono Nerd Font"; then
-      echo "####### installing JetBrains Mono Nerd Font"
-      mkdir -p ~/.local/share/fonts
-      cd /tmp
-      curl -fLO https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.tar.xz
-      mkdir -p JetBrainsMono && tar -xf JetBrainsMono.tar.xz -C JetBrainsMono
-      cp JetBrainsMono/*.ttf ~/.local/share/fonts/
-      fc-cache -fv
-      rm -rf JetBrainsMono JetBrainsMono.tar.xz
-      cd -
-    else
-      echo "JetBrains Mono Nerd Font already installed, skipping."
-    fi
+    bash "$PWD/fedora-setup.sh"
   fi
 fi
