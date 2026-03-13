@@ -91,10 +91,6 @@ if status --is-login
     . ~/.config/fish/env.fish
 end
 
-if status --is-interactive
-    . ~/.config/fish/private.fish
-end
-
 # Cross-platform paths
 fish_add_path $HOME/.local/bin $HOME/.cargo/bin $HOME/bin
 
