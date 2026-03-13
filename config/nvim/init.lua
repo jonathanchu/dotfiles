@@ -160,7 +160,7 @@ require('lazy').setup({
   {
     'nvim-telescope/telescope.nvim',
     event = 'VimEnter',
-    branch = '0.1.x',
+    branch = 'master',
     dependencies = {
       'nvim-lua/plenary.nvim',
       {
@@ -404,10 +404,11 @@ require('lazy').setup({
 
       vim.api.nvim_create_autocmd('FileType', {
         callback = function(args)
-          local language = vim.treesitter.language.get_lang(args.match)
-          if not language then return end
-          if not vim.treesitter.language.add(language) then return end
-          vim.treesitter.start(args.buf, language)
+          local ok, language = pcall(vim.treesitter.language.get_lang, args.match)
+          if not ok or not language then return end
+          if not pcall(vim.treesitter.language.add, language) then return end
+          local started, _ = pcall(vim.treesitter.start, args.buf, language)
+          if not started then return end
           vim.bo[args.buf].indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
         end,
       })
