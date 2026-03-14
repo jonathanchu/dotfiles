@@ -2,8 +2,6 @@
 #
 # This installation is destructive, as it removes existing files/directories.
 # Use at your own risk.
-#
-# Taken from https://github.com/mitchellh/dotfiles/blob/master/install.sh
 
 # Symlink a source to a target, removing any existing file/symlink/directory
 link_file() {
