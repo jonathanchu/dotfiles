@@ -3,7 +3,7 @@ font-family = JetBrains Mono
 font-size = 15
 
 # Appearance
-theme = light:Catppuccin Latte,dark:Catppuccin Frappe
+theme = Catppuccin Frappe
 background-blur-radius = 20
 cursor-style = block
 shell-integration-features = no-cursor
