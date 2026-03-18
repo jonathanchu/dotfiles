@@ -23,3 +23,5 @@ keybind = ctrl+shift+enter=new_split:right
 keybind = ctrl+shift+o=new_split:down
 keybind = ctrl+shift+bracket_left=goto_split:previous
 keybind = ctrl+shift+bracket_right=goto_split:next
+keybind = shift+alt+bracket_left=previous_tab
+keybind = shift+alt+bracket_right=next_tab
