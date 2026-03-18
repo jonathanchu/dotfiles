@@ -43,7 +43,6 @@
     fup = log --since '1 day ago' --oneline --author jonathan.chu@me.com  # I know what you did yesterday - great for follow-ups
     ls = log --pretty=format:"%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]" --decorate --date=short  # pretty one-line log with tags, branches and authors
     lsv = log --pretty=format:"%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]" --decorate --date=short --numstat    # a verbose ls, shows changed files too
-    lg = log --oneline --decorate --graph
     lss = log --stat --summary
     tree = log --graph --pretty=oneline --decorate
     last = log -1 HEAD
