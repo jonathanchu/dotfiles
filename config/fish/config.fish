@@ -97,9 +97,6 @@ fish_add_path $HOME/.local/bin $HOME/.cargo/bin $HOME/bin
 # macOS-specific
 if test (uname) = Darwin
     fish_add_path /opt/homebrew/bin /usr/local/bin /usr/local/sbin
-    if test -d /Applications/Postgres.app
-        fish_add_path /Applications/Postgres.app/Contents/Versions/latest/bin
-    end
     if test -d $HOME/.antigravity/antigravity/bin
         fish_add_path $HOME/.antigravity/antigravity/bin
     end
