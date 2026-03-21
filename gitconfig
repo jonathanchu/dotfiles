@@ -4,10 +4,6 @@
 
 [color]
     ui = auto
-    diff = auto
-    status = auto
-    branch = auto
-    interactive = auto
 
 [color "branch"]
     current = cyan
