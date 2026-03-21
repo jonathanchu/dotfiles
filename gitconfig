@@ -59,10 +59,12 @@
 
 [magit]
     hideCampaign = true
+
 [github]
     user = jonathanchu
+
 [init]
-        defaultBranch = main
+    defaultBranch = main
 
 [includeIf "gitdir:~/work/"]
     path = ~/.gitconfig-work
