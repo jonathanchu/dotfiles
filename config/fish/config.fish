@@ -87,10 +87,6 @@ end
 set -gx EDITOR emacsclient -t
 set -gx VISUAL emacsclient -c -a emacs
 
-if status --is-login
-    . ~/.config/fish/env.fish
-end
-
 # Cross-platform paths
 fish_add_path $HOME/.local/bin $HOME/.cargo/bin $HOME/bin
 
