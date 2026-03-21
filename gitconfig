@@ -63,3 +63,6 @@
     user = jonathanchu
 [init]
         defaultBranch = main
+
+[includeIf "gitdir:~/work/"]
+    path = ~/.gitconfig-work
