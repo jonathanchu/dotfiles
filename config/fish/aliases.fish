@@ -5,7 +5,6 @@ if test (uname) = Darwin
 else
     alias ls 'command ls -F --color=auto'
 end
-alias l ls
 alias ll 'ls -la'
 alias rm 'rm -i'
 alias mv 'mv -i'
