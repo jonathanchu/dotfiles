@@ -27,8 +27,7 @@ for name in *; do
      [ "$name" == "config" ] || \
      [ "$name" == "LICENSE" ] || \
      [ "$name" == "Brewfile" ] || \
-     [ "$name" == "npm-globals.sh" ] || \
-     [ "$name" == "get_ghostty_themes.sh" ] || \
+[ "$name" == "get_ghostty_themes.sh" ] || \
      [ "$name" == "osx_emacs_keybindings.dict" ] || \
      [ "$name" == "fedora-setup.sh" ]; then
     continue
