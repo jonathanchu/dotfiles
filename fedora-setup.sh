@@ -34,7 +34,8 @@ sudo dnf install -y \
   texlive-moderncv \
   texlive-fontawesome5 \
   texlive-multirow \
-  texlive-arydshln
+  texlive-arydshln \
+  texlive-lato
 
 # Install Ghostty via Terra repo
 if ! command -v ghostty &>/dev/null; then
