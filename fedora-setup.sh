@@ -30,7 +30,8 @@ sudo dnf install -y \
   libtool \
   unzip \
   curl \
-  fontconfig
+  fontconfig \
+  texlive-moderncv
 
 # Install Ghostty via Terra repo
 if ! command -v ghostty &>/dev/null; then
