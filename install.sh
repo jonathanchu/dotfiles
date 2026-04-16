@@ -65,6 +65,14 @@ if [[ "$(uname)" == "Darwin" ]]; then
     echo "Homebrew already installed, skipping."
   fi
 
+  # Ensure brew is on PATH for the rest of this script (fresh installs don't
+  # have it until a new shell is started).
+  if [ -x /opt/homebrew/bin/brew ]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+  elif [ -x /usr/local/bin/brew ]; then
+    eval "$(/usr/local/bin/brew shellenv)"
+  fi
+
   echo "####### homebrewing the world"
   brew bundle --global
 
