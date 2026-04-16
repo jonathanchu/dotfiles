@@ -74,7 +74,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
   fi
 
   echo "####### homebrewing the world"
-  brew bundle --global
+  brew bundle --file="$PWD/Brewfile"
 
   echo "####### installing custom osx keybindings"
   mkdir -p ~/Library/KeyBindings
