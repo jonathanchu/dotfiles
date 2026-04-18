@@ -56,6 +56,8 @@ brew "yt-dlp"
 brew "daviderestivo/emacs-head/emacs-head@30", args: ["with-liquid-glass", "with-cocoa", "with-imagemagick", "with-tree-sitter"]
 brew "anomalyco/tap/opencode"
 brew "nvie/tap/git-toolbelt"
+cask "font-jetbrains-mono"
+cask "font-jetbrains-mono-nerd-font"
 cask "chatgpt"
 cask "claude"
 cask "claude-code"
