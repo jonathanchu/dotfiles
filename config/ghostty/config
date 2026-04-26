@@ -8,6 +8,13 @@ background-blur-radius = 20
 cursor-style = block
 shell-integration-features = no-cursor
 
+# Brighten ANSI bright black (color 8) so dim text from CLI tools
+# (Claude Code's tool previews, git's hint text, etc.) is legible
+# against Frappé's base background. Default Frappé is Surface2
+# (#626880) — switching to Overlay0 (#737994) lifts contrast without
+# leaving the Catppuccin palette.
+palette = 8=#737994
+
 # Window
 window-decoration = true
 window-inherit-working-directory = true
