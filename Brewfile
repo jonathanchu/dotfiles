@@ -1,5 +1,5 @@
 tap "anomalyco/tap"
-tap "arimxyer/tap"
+tap "reyamira/tap"
 tap "daviderestivo/emacs-head"
 tap "nvie/tap"
 brew "act"
