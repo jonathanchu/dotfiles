@@ -79,3 +79,7 @@ cask "tableplus"
 cask "vlc"
 cask "xquartz"
 cask "zed"
+
+go "golang.org/x/tools/gopls"
+
+npm "vercel"
