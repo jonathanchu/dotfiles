@@ -67,7 +67,6 @@ cask "font-jetbrains-mono-nerd-font"
 cask "font-symbols-only-nerd-font"
 cask "chatgpt"
 cask "claude"
-cask "claude-code"
 cask "codex"
 cask "docker-desktop"
 cask "ghostty"
@@ -83,6 +82,7 @@ cask "zed"
 
 go "golang.org/x/tools/gopls"
 
+npm "@anthropic-ai/claude-code"
 npm "vercel"
 
 vscode "dbaeumer.vscode-eslint"
